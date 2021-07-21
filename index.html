@@ -5,16 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- main CSS  -->
     <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
+    <link rel="stylesheet" href="./dev/scss/style.css">
+
     <title>MyCV</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header__component grid">
+            <div class="header__wrap wide">
+                <div class="row">
+                    <div class="header__avt col l-3">
+                        <img src="./assets/imgs/img_avatar.png" alt="avatar">
+                    </div>
+                    <div class="header-profile col l-9">
+                        <p class="header-profile__name">Bùi Quang Tuấn</p>
+                        <p class="header-profile__work">Frontend developer</p>
+                        <div class="header-profile__contact">
+                            <dl>
+                                <dt>age:</dt>
+                                <dd>21</dd>
+                                <dt>phone:</dt>
+                                <dd><a href="tel:0387126034">0387126034</a></dd>
+                                <dt>email:</dt>
+                                <dd><a href="mailto:buiquangtuan02082000@gmail.com">buiquangtuan02082000@gmail.com</a></dd>
+                                <dt>address:</dt>
+                                <dd>Tân Triều, Thanh Trì, Hà Nội</dd>
+                            </dl>
+                        </div>
+                        <div class="header-profile__social">
+                            <a href="https://github.com/quangtuan28200" target="blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com/bui.quangtuan.104/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
