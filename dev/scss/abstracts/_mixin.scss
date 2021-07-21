@@ -1,0 +1,19 @@
+
+@mixin btn-color($color){
+    background-color: $color;
+}
+
+@mixin responsive($breakpoint){
+    @if $breakpoint == phone {
+        @media (max-width: 600px){ @content };
+    }
+    @if $breakpoint == tablet {
+        @media (max-width: 1200px){ @content };
+    }
+    @if $breakpoint == pc {
+        @media (max-width: 1800px){ @content };
+    }
+    @if $breakpoint == big-pc {
+        @media (min-width: 1800px){ @content };
+    }
+}
