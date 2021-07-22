@@ -1,3 +1,6 @@
+
+//SCROLL CSS
+
 // The debounce function receives our function as a parameter
 const debounce = (fn) => {
 
@@ -34,3 +37,30 @@ document.addEventListener('scroll', debounce(storeScroll), { passive: true });
 
 // Update scroll position for first time
 storeScroll();
+
+
+//-----------------------------------------------------------------------------------------------------------//
+
+//ACTIVE BTN WHEN SCROLL
+$('a[data-scroll]').click(function(e) {
+	e.preventDefault();
+	var target = ( '#' + $(this).data('scroll') );
+	var $target = $(target);
+	//Animate the scroll to, include easing lib if you want more fancypants easings
+	$('html, body').stop().animate({
+	    'scrollTop': $target.offset().top
+	});
+}); 
+
+$(window).scroll(function() {
+    var scrollDistance = $(window).scrollTop();
+
+    // Assign active class to nav links while scolling
+    $('.page-section').each(function(i) {
+        console.log($(this).position().top,scrollDistance)
+        if ($(this).position().top <= scrollDistance) {
+                $('.header__nav--wr a.active').removeClass('active');
+                $('.header__nav--wr a').eq(i).addClass('active');
+        }
+    });
+});
