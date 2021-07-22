@@ -1,0 +1,15 @@
+.site-btn{
+    background: #4a4a4a;
+    padding: 16px 24px;
+    border-radius: 50px;
+    color: white;
+    text-transform: uppercase;
+    transition: .2s ease;
+    i{
+        margin-right: 10px;
+    }
+
+    &:hover{
+        opacity: .9;
+    }
+}

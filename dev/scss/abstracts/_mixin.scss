@@ -17,3 +17,8 @@
         @media (min-width: 1800px){ @content };
     }
 }
+@mixin scroll {
+    html:not([data-scroll='0']) {
+        @content
+    }
+}

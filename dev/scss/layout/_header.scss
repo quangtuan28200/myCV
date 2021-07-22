@@ -1,15 +1,127 @@
+
 header{
-    color: white;
     .header{
-        &__component{
-            background-color: #4a4a4a;
+        &__nav{
+            background-color: $primary-color;
+            color: white;
+            transform: translateX(0);
+            transition: .4s ease;
+
+            .logo{
+                color: white;
+                font-size: 4rem;
+                text-align: center;
+                border: 3px solid;
+                border-radius: 4px;
+                margin: 20px;
+                display: none;
+            }
+        
+            &--wr{
+                padding-top: 40px;
+                ul{
+                    display: flex;
+                    li{
+                        a{
+                            padding-right: 50px;
+                            color: white;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            position: relative;
+
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                right: 40px;
+                                bottom: 2px;
+                                width: 7px;
+                                height: 2px;
+                                background-color: white;
+                                opacity: 0;
+                            }
+                            &:hover{
+                                opacity: .9;
+                                &::after{
+                                    opacity: .9;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--cb{
+                display: none;
+            }
+
+            &--btn{
+                display: none;
+                position: absolute;
+                top: 0;
+                left: -30px;
+                width: 30px;
+                height: 30px;
+                background-color: $primary-color;
+                border-bottom-left-radius: 4px;
+                cursor: pointer;
+
+                span{
+                    &, &::after, &::before{
+                        width: 16px;
+                        height: 3px;
+                        position: absolute;
+                        background-color: white;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        transition: .2s ease;
+                    }
+                    &::after, &::before{
+                        content: "";
+                    }
+                    &::before{
+                        top: 200%;
+                    }
+                    &::after{
+                        top: -100%;
+                    }
+                }
+            }
         }
 
+        &__component{
+            color: white;
+            background-color: $primary-color;
+            clip-path: ellipse(100% 100% at 50% -8%);
+            height: 100vh;
+            transform: translateX(0);
+            transition: .4s ease;
+
+            &--cb{
+                display: none;
+            }
+
+            &--btn{
+                display: none;
+                position: absolute;
+                top: 0;
+                right: -30px;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                background-color: $primary-color;
+                border-bottom-right-radius: 4px;
+                cursor: pointer;
+            }
+        }
+        
         &__wrap{
             padding: 40px 0;
+            display: flex;
         }
 
         &__avt{
+            width: 30%;
             img{
                 width: 100%;
                 height: 100%;
@@ -19,6 +131,8 @@ header{
         }
 
         &-profile{
+            padding-left: 40px;
+            width: 70%;
             &__name{
                 font-size: 4.4rem;
                 font-weight: 500;
@@ -37,7 +151,7 @@ header{
                     float: left;
                 }
                 dd{
-                    padding-left: 100px;
+                    padding-left: 32px;
                     margin-bottom: 15px;
                     a{
                         color: white;
@@ -61,6 +175,111 @@ header{
                     &:hover{
                         opacity: 1;
                     }
+                }
+            }
+        }
+    }
+}
+
+@include scroll{
+    header{ 
+        .header{    
+            &__nav{
+                position: fixed;
+                width: unset;
+                height: 100vh;
+                right: 0;
+                transform: translateX(100%);
+
+                &--cb{
+                    display: none;
+                    &:checked ~ .header__nav{
+                        transform: translateX(0);
+                        .header__nav--btn{
+                            span{
+                                background-color: transparent;
+                                &::before{
+                                    top: 0;
+                                    transform: translate(-50%, -50%) rotate( -45deg);
+                                }
+                                &::after{
+                                    top: 0;
+                                    transform: translate(-50%, -50%) rotate( 45deg);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &--btn{
+                    display: block;
+                }
+
+                .logo{
+                    display: block;
+                }
+                
+                &--wr{
+                    padding-top: 0;
+                    width: fit-content;
+                    ul{
+                        flex-direction: column;
+                        li{
+                            a{
+                                text-align: center;
+                                padding: 8px 40px;
+                                display: block;
+
+                            }
+                        }   
+                    }
+                }
+
+            }
+            
+            &__component{
+                position: fixed;
+                width: unset;
+                clip-path: none;
+                transform: translateX(-100%);
+
+                &--cb{
+                    &:checked ~ .header__component{
+                        transform: translateX(0);
+                    }
+                }
+                    
+
+                &--btn{
+                    display: block;
+                }
+            }
+    
+            &__wrap{
+                width: min-content;
+                display: block;
+                padding: 28px 20px;
+            }
+
+            &__avt{
+                width: 100%;
+                text-align: center;
+                img{
+                    width: 50%;
+                    border-radius: 50%;
+                }
+            }
+
+            &-profile{
+                width: 100%;
+                padding: 0;
+
+                &__name{
+                    text-align: center;
+                    font-size: 3.4rem;
+                }
+                &__work{
+                    text-align: center;
                 }
             }
         }

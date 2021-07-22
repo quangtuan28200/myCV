@@ -27,3 +27,18 @@ li{
     list-style-type: none;
 }
 
+.section{
+    &__title{
+        margin-bottom: 40px;
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 500;
+    }
+    &__description{
+        margin-bottom: 30px;
+    }
+    &__btn{
+        outline: none;
+        cursor: pointer;
+    }
+}
