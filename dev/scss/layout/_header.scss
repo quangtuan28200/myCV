@@ -1,12 +1,18 @@
 
 header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     .header{
         &__nav{
-            z-index: 1000;
             background-color: $primary-color;
             color: white;
             transform: translateX(0);
             transition: .4s ease;
+            z-index: 1000;
 
             .logo{
                 color: white;
@@ -92,13 +98,13 @@ header{
         }
 
         &__component{
-            z-index: 1000;
             color: white;
             background-color: $primary-color;
             clip-path: ellipse(100% 100% at 50% -8%);
             height: 100vh;
             transform: translateX(0);
             transition: .4s ease;
+            z-index: 1000;
 
             &--cb{
                 display: none;

@@ -75,8 +75,7 @@ $(window).scroll(function() {
 
 $( document ).ready(function() {
     setTimeout(() => {
-        $('.loader').css('opacity', '0');
-        $('.loader').css('visibility', 'hidden');
+        $('.loader').fadeOut(800);
     }, 500);
 });
 
@@ -92,11 +91,11 @@ $('a[data-target-tag]').click(function(e) {
     $('.projects-card__wr[data-tag]').each(function () { 
         var tag = $(this).data('tag');
         if(target == 'all'){
-            $(this).fadeIn(1000);
+            $(this).fadeIn(800);
         }else{
             $(this).css('display','none');
             if(target === tag){
-                $(this).fadeIn(1000);
+                $(this).fadeIn(800);
             }
         }
     });

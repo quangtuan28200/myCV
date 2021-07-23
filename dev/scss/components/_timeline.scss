@@ -10,7 +10,7 @@
     &__item{
         border-left: 2px solid $primary-color;
         padding-left: 25px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
         position: relative;
 
         &::before{
@@ -43,6 +43,13 @@
             line-height: 20px;
             color: #999;
             padding-bottom: 10px;
+        }
+        &-content{
+            a{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
