@@ -2,6 +2,7 @@
 header{
     .header{
         &__nav{
+            z-index: 1000;
             background-color: $primary-color;
             color: white;
             transform: translateX(0);
@@ -91,6 +92,7 @@ header{
         }
 
         &__component{
+            z-index: 1000;
             color: white;
             background-color: $primary-color;
             clip-path: ellipse(100% 100% at 50% -8%);
@@ -294,7 +296,7 @@ header{
 
                 &__name{
                     text-align: center;
-                    font-size: 3.4rem;
+                    font-size: 2.8rem;
                 }
                 &__work{
                     text-align: center;

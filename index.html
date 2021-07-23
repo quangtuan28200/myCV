@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" scroll="0">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +19,7 @@
 <body>
     <div id="home" class="page-section"></div>
     <header>
+        <!-- checked="checked" -->
         <input type="checkbox" id="header__nav--cb" class="header__nav--cb">
         <div class="header__nav grid">
             <label class="header__nav--btn" for="header__nav--cb"><span></span></label>
@@ -27,22 +28,22 @@
                 <ul>
                     <li><a href="#" data-scroll="hello">hello</a></li>
                     <li><a href="#" data-scroll="resume">resume</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#" data-scroll="skills">skills</a></li>
+                    <li><a href="#" data-scroll="projects">projects</a></li>
+                    <li><a href="#contact" data-scroll="contect">contact</a></li>
                 </ul>
             </div>
             
         </div>
         <input type="checkbox" id="header__component--cb" class="header__component--cb">
-        <div class="header__component grid">
+        <div class="header__component grid" width="0">
             <label class="header__component--btn" for="header__component--cb"><i class="fas fa-info"></i></label>
             <div class="header__wrap wide">
                     <div class="header__avt">
                         <img src="./assets/imgs/img_avatar.png" alt="avatar">
                     </div>
                     <div class="header-profile">
-                        <p class="header-profile__name">Bùi Quang Tuấn_</p>
+                        <p class="header-profile__name">Bui Quang Tuan_</p>
                         <p class="header-profile__work">Frontend developer</p>
                         <div class="header-profile__contact">
                             <dl>
@@ -55,7 +56,7 @@
                                 <dt><i class="fas fa-envelope"></i></dt>
                                 <dd><a href="mailto:buiquangtuan02082000@gmail.com">buiquangtuan02082000@gmail.com</a></dd>
                                 <dt><i class="fas fa-map-marked-alt"></i></dt>
-                                <dd>Tân Triều, Thanh Trì, Hà Nội</dd>
+                                <dd>Tan Trieu, Thanh Tri, Ha Noi</dd>
                             </dl>
                         </div>
                         <div class="header-profile__social">
@@ -77,18 +78,182 @@
                         <p class="section__description">I am Junior Web developer able to build a Web presence from the ground up - from concept, navigation, layout and programming to UX and SEO. Skilled at writing well-designed, testable and efficient code using current best practices in Web development. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.</p>
                         <a href="#" class="section__btn site-btn"><i class="fas fa-download"></i>dowload cv</a>
                     </section>
-                <!-- Hello -->
+                <!-- /Hello -->
                 <hr>
                 <!-- Resume -->
                 <section id="resume" class="page-section">
                     <h2 class="section__title">Resume_</h2>
                     <p class="section__description">Lorem ipsum dolor sit amet, communication adipisicing elit, helpful eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud sence of humour ullamco laboris nisi ut honest ea commodo consequat. Duis aute irure dolor in upper-intermediate english level velit dolore eu ivivdtevoluptatem ontend developer.</p>
+                    <!-- education -->
+                    <div class="timeline__list">
+                        <div class="timeline__title">education</div>
+                        <div class="timeline__item">
+                            <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                            <div class="timeline__item-date">2016-2020</div>
+                            <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                            <div class="timeline__item-date">2016-2020</div>
+                            <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                            <div class="timeline__item-date">2016-2020</div>
+                            <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                        </div>
+                    </div>
+                    <!-- education -->
+                    <!-- experience -->
+                    <div class="timeline__list" style="margin-top: 30px;">
+                        <div class="timeline__title">experience</div>
+                        <div class="timeline__item">
+                            <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                            <div class="timeline__item-date">2016-2020</div>
+                            <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                            <div class="timeline__item-date">2016-2020</div>
+                            <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                            <div class="timeline__item-date">2016-2020</div>
+                            <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                        </div>
+                    </div>
+                    <!-- experience -->
                 </section>
-                <!-- Resume -->
+                <!-- /Resume -->
+                <!-- Skills -->
+                <section id="skills" class="page-section">
+                    <h2 class="section__title">Skills_</h2>
+                    <div class="row">
+                        <div class="col l-6">
+                            <div class="timeline__list">
+                                <div class="timeline__title">PROFESSIONAL SKILLS</div>
+                                <div class="timeline__item">
+                                    <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                                    <div class="timeline__item-date">2016-2020</div>
+                                    <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                                </div>
+                                <div class="timeline__item">
+                                    <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                                    <div class="timeline__item-date">2016-2020</div>
+                                    <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                                </div>
+                                <div class="timeline__item">
+                                    <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                                    <div class="timeline__item-date">2016-2020</div>
+                                    <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="timeline__list">
+                                <div class="timeline__title">ADDITIONAL SKILLS</div>
+                                <div class="timeline__item">
+                                    <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                                    <div class="timeline__item-date">2016-2020</div>
+                                    <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                                </div>
+                                <div class="timeline__item">
+                                    <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                                    <div class="timeline__item-date">2016-2020</div>
+                                    <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                                </div>
+                                <div class="timeline__item">
+                                    <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                                    <div class="timeline__item-date">2016-2020</div>
+                                    <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Skills -->
+                <!-- Projects -->
+                <section id="projects" class="page-section">
+                    <h2 class="section__title">Projects_</h2>
+                    <div class="projects__nav">
+                        <ul>
+                            <li><a href="" data-target-tag="all">all</a></li>
+                            <li><a href="" data-target-tag="web-sites">web-sites</a></li>
+                            <li><a href="" data-target-tag="landing-pages">landing pages</a></li>
+                            <li><a href="" data-target-tag="program">program</a></li>
+                        </ul>
+                    </div>
+                    <div class="projects-card">
+                        <div class="projects-card__wr row no-gutters" data-tag="web-sites">
+                            <div class="projects-card__img col l-5">
+                                <img src="./assets/imgs/img_project_1_mono.png" alt="img">
+                            </div>
+                            <div class="projects-card__info col l-7">
+                                <h3 class="projects-card__title">Mobile and desktop app for London hostel store 2 </h3>
+                                <p class="projects-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tempore sed corrupti unde? Aut sint nemo perspiciatis blanditiis? Hic deserunt omnis maiores fuga totam accusamus, nemo earum natus? Tenetur, eum.</p>
+                                <p class="projects-card__stack">Used stack:</p>
+                                <ul class="tags">
+                                    <li>html5</li>
+                                    <li>css3</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <a href="" class="projects-card__link">www.superapp.com</a>
+                            </div>
+                        </div>
+                        <div class="projects-card__wr row no-gutters" data-tag="landing-pages">
+                            <div class="projects-card__img col l-5">
+                                <img src="./assets/imgs/img_project_2_mono.png" alt="img">
+                            </div>
+                            <div class="projects-card__info col l-7">
+                                <h3 class="projects-card__title">Mobile and desktop app for London hostel store 3 </h3>
+                                <p class="projects-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tempore sed corrupti unde? Aut sint nemo perspiciatis blanditiis? Hic deserunt omnis maiores fuga totam accusamus, nemo earum natus? Tenetur, eum.</p>
+                                <p class="projects-card__stack">Used stack:</p>
+                                <ul class="tags">
+                                    <li>html5</li>
+                                    <li>css3</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <a href="" class="projects-card__link">www.superapp.com</a>
+                            </div>
+                        </div>
+                        <div class="projects-card__wr row no-gutters" data-tag="program">
+                            <div class="projects-card__img col l-5">
+                                <img src="./assets/imgs/img_project_3_mono.png" alt="img">
+                            </div>
+                            <div class="projects-card__info col l-7">
+                                <h3 class="projects-card__title">Mobile and desktop app for London hostel store 4 </h3>
+                                <p class="projects-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tempore sed corrupti unde? Aut sint nemo perspiciatis blanditiis? Hic deserunt omnis maiores fuga totam accusamus, nemo earum natus? Tenetur, eum.</p>
+                                <p class="projects-card__stack">Used stack:</p>
+                                <ul class="tags">
+                                    <li>html5</li>
+                                    <li>css3</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <a href="" class="projects-card__link">www.superapp.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Projects -->
             </div>
         </div>
     </main>
+    <footer>
+        <div class="grid">
+            <div class="wide">
+                <hr>
+                <div class="footer__text">
+                    <i class="far fa-copyright"></i>
+                    2021 by TuanKMA
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <div class="loader">
+        <div class="loader__wr"><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/main.js"></script>
 </body>
