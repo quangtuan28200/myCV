@@ -100,3 +100,26 @@ $('a[data-target-tag]').click(function(e) {
         }
     });
 }); 
+
+//show view_wr--------------------------------------------------------------------------------------//
+$('a[data-view]').click(function (e) { 
+    e.preventDefault();
+    var dataView = $(this).data('view');
+    $('.projects-card__view').each(function (indexInArray, valueOfElement) { 
+        if($(this).data('view') === dataView){
+            $(this).fadeIn(200)
+        }
+    });
+});
+
+$('.projects-card__view').click(function (e) { 
+    e.preventDefault();
+    $('.view__video').attr("src", $('.view__video').attr('src'))
+    $(this).fadeOut(200);
+});
+
+$(".view__wr").click(function(e) {
+    e.stopPropagation();
+});
+
+

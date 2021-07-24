@@ -398,7 +398,8 @@ hr {
           opacity: 1; }
   #projects .projects-card__wr {
     margin-bottom: 40px;
-    transition: box-shadow .3s ease; }
+    transition: box-shadow .3s ease;
+    border: 1px solid #f1f1f1; }
     #projects .projects-card__wr:hover {
       box-shadow: 0 1px 30px rgba(0, 0, 0, 0.09);
       cursor: pointer; }
@@ -408,17 +409,21 @@ hr {
     -o-object-fit: cover;
     object-fit: cover; }
   #projects .projects-card__info {
-    border: 1px solid #f1f1f1;
-    padding: 50px 50px 40px 30px; }
+    padding: 20px 30px; }
   #projects .projects-card__title {
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 15px;
     font-weight: 500; }
+  #projects .projects-card__date {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+    padding-bottom: 10px; }
   #projects .projects-card__description {
     line-height: 24px;
-    margin-bottom: 45px; }
+    margin-bottom: 20px; }
   #projects .projects-card__stack {
     font-size: 12px;
     line-height: 18px;
@@ -435,12 +440,31 @@ hr {
     margin-right: 10px;
     border-radius: 3px; }
   #projects .projects-card__link {
-    margin-top: 55px;
-    font-size: 14px;
-    line-height: 20px;
+    margin-top: 32px;
     float: right; }
-    #projects .projects-card__link:hover {
-      text-decoration: underline; }
+    #projects .projects-card__link a {
+      font-size: 14px;
+      line-height: 20px; }
+      #projects .projects-card__link a:hover {
+        text-decoration: underline; }
+    #projects .projects-card__link i {
+      margin-right: 10px; }
+  #projects .projects-card__view {
+    position: fixed;
+    z-index: 1002;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none; }
+    #projects .projects-card__view .view__wr {
+      background-color: #fff;
+      border-radius: 8px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 html:not([scroll='0']) main {
   opacity: 1; }
