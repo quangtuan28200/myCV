@@ -1,0 +1,11 @@
+@keyframes blinking {
+    to {
+      background: transparent;
+    }
+}
+  
+@keyframes typing {
+    80%, 100% {
+        left: 100%;
+    }
+}

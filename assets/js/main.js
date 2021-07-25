@@ -65,8 +65,34 @@ $(window).scroll(function() {
     $('.page-section').each(function(i) {
         // console.log($(this).position().top,scrollDistance)
         if ($(this).position().top <= scrollDistance) {
-                $('.header__nav--wr a.active').removeClass('active');
-                $('.header__nav--wr a').eq(i).addClass('active');
+            $('.header__nav--wr a.active').removeClass('active');
+            $('.header__nav--wr a').eq(i).addClass('active');
+            
+            var title = $(this).find('.section__title');
+            // your custome placeholder goes here!
+            var originText = title.text(),
+            phCount = 0;
+            console.log(originText)
+
+            // title.text("");
+            // printLetter(originText, title);
+
+            function printLetter(text, el){
+                var arr = text.split("");
+                var currentText = el.text()
+                var replace = currentText + arr[phCount];
+
+                setTimeout(function () {
+                    // print  text
+                    el.text(replace)
+                    // increase loop count
+                    phCount++;
+                    // run loop until placeholder is fully printed
+                    if (phCount < arr.length) {
+                        printLetter(text, el);
+                    }
+                }, 100);
+            }
         }
     });
 });
@@ -107,19 +133,52 @@ $('a[data-view]').click(function (e) {
     var dataView = $(this).data('view');
     $('.projects-card__view').each(function (indexInArray, valueOfElement) { 
         if($(this).data('view') === dataView){
-            $(this).fadeIn(200)
+            $(this).find('.view__video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+            $(this).fadeIn(400)
         }
     });
 });
 
 $('.projects-card__view').click(function (e) { 
     e.preventDefault();
-    $('.view__video').attr("src", $('.view__video').attr('src'))
-    $(this).fadeOut(200);
+    $('.view__video').each(function () { 
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*'); 
+    });
+    $(this).fadeOut(400);
 });
 
 $(".view__wr").click(function(e) {
     e.stopPropagation();
 });
+
+//typing effect--------------------------------------------------------------------------------------//
+
+// $('.section__title').each(function () { 
+//     // your custome placeholder goes here!
+//     var originText = $(this).text(),
+//     phCount = 0;
+
+//     $(this).text("");
+//     printLetter(originText, $(this));
+
+//     function printLetter(text, el){
+//         var arr = text.split("");
+//         var currentText = el.text()
+//         var replace = currentText + arr[phCount];
+
+//         setTimeout(function () {
+//             // print  text
+//             el.text(replace)
+//             // increase loop count
+//             phCount++;
+//             // run loop until placeholder is fully printed
+//             if (phCount < arr.length) {
+//                 printLetter(text, el);
+//             }
+//         }, 100);
+//     }
+// });
+
+
 
 

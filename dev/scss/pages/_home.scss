@@ -72,7 +72,6 @@ hr{
                 border: 1px solid #f1f1f1;
                 &:hover{
                     box-shadow: 0 1px 30px rgba(0, 0, 0, .09);
-                    cursor: pointer;
                 }
             }
             &__img{
@@ -81,6 +80,7 @@ hr{
                     height: 100%;
                     -o-object-fit: cover;
                     object-fit: cover;
+                    // filter: grayscale(1);
                 }
             }
             &__info{
@@ -145,14 +145,18 @@ hr{
                 height: 100vh;
                 background-color: rgba(0, 0, 0, .6);
                 display: none;
+                cursor: pointer;
                 .view__wr{
-                    // padding: 80px;
+                    height: 472px;
+                    overflow-y: scroll;
                     background-color: #fff;
-                    border-radius: 8px;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    .view__video{
+                        display: block;
+                    }
                 }
             }
         }

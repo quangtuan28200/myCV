@@ -34,6 +34,28 @@ li{
         font-size: 36px;
         line-height: 42px;
         font-weight: 500;
+        position: relative;
+        display: inline-block;
+        
+        // &::before, &::after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        // }
+        // &::before {
+        //     background: white;
+        //     animation: typing 1s steps(8) infinite;
+        // }
+        // &::after {
+        //     top: unset;
+        //     height: 4px;
+        //     width: 16px;
+        //     background-color: $primary-color;
+        //     animation: typing 1s steps(8) infinite, blinking 0.25s ease alternate infinite;
+        // }
     }
     &__description{
         margin-bottom: 30px;
