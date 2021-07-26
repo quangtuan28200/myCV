@@ -60,39 +60,19 @@ $('a[data-scroll]').click(function(e) {
 
 $(window).scroll(function() {
     var scrollDistance = $(window).scrollTop();
-
     // Assign active class to nav links while scolling
     $('.page-section').each(function(i) {
-        // console.log($(this).position().top,scrollDistance)
-        if ($(this).position().top <= scrollDistance) {
+        if (($(this).position().top - $(window).height()*0.4) <= scrollDistance) {
+            //active effect
             $('.header__nav--wr a.active').removeClass('active');
             $('.header__nav--wr a').eq(i).addClass('active');
             
-            var title = $(this).find('.section__title');
-            // your custome placeholder goes here!
-            var originText = title.text(),
-            phCount = 0;
-            console.log(originText)
+            //typing efftect
+            var textLength = $(this).find('.section__title').text().length;
+            $(this).find('.section__title').css('--step',textLength);
 
-            // title.text("");
-            // printLetter(originText, title);
-
-            function printLetter(text, el){
-                var arr = text.split("");
-                var currentText = el.text()
-                var replace = currentText + arr[phCount];
-
-                setTimeout(function () {
-                    // print  text
-                    el.text(replace)
-                    // increase loop count
-                    phCount++;
-                    // run loop until placeholder is fully printed
-                    if (phCount < arr.length) {
-                        printLetter(text, el);
-                    }
-                }, 100);
-            }
+            //section__wr effect
+            $(this).find('.section__wr').addClass('active');
         }
     });
 });
@@ -100,9 +80,7 @@ $(window).scroll(function() {
 //Loader--------------------------------------------------------------------------------------//
 
 $( document ).ready(function() {
-    setTimeout(() => {
-        $('.loader').fadeOut(800);
-    }, 500);
+    $('.loader').fadeOut(800);
 });
 
 //project redirect--------------------------------------------------------------------------------------//
@@ -128,55 +106,27 @@ $('a[data-target-tag]').click(function(e) {
 }); 
 
 //show view_wr--------------------------------------------------------------------------------------//
-$('a[data-view]').click(function (e) { 
-    e.preventDefault();
-    var dataView = $(this).data('view');
-    $('.projects-card__view').each(function (indexInArray, valueOfElement) { 
-        if($(this).data('view') === dataView){
-            $(this).find('.view__video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-            $(this).fadeIn(400)
-        }
-    });
-});
+// $('a[data-view]').click(function (e) { 
+//     e.preventDefault();
+//     var dataView = $(this).data('view');
+//     $('.projects-card__view').each(function (indexInArray, valueOfElement) { 
+//         if($(this).data('view') === dataView){
+//             $(this).find('.view__video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+//             $(this).fadeIn(400)
+//         }
+//     });
+// });
 
-$('.projects-card__view').click(function (e) { 
-    e.preventDefault();
-    $('.view__video').each(function () { 
-        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*'); 
-    });
-    $(this).fadeOut(400);
-});
+// $('.projects-card__view').click(function (e) { 
+//     e.preventDefault();
+//     $('.view__video').each(function () { 
+//         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*'); 
+//     });
+//     $(this).fadeOut(400);
+// });
 
-$(".view__wr").click(function(e) {
-    e.stopPropagation();
-});
-
-//typing effect--------------------------------------------------------------------------------------//
-
-// $('.section__title').each(function () { 
-//     // your custome placeholder goes here!
-//     var originText = $(this).text(),
-//     phCount = 0;
-
-//     $(this).text("");
-//     printLetter(originText, $(this));
-
-//     function printLetter(text, el){
-//         var arr = text.split("");
-//         var currentText = el.text()
-//         var replace = currentText + arr[phCount];
-
-//         setTimeout(function () {
-//             // print  text
-//             el.text(replace)
-//             // increase loop count
-//             phCount++;
-//             // run loop until placeholder is fully printed
-//             if (phCount < arr.length) {
-//                 printLetter(text, el);
-//             }
-//         }, 100);
-//     }
+// $(".view__wr").click(function(e) {
+//     e.stopPropagation();
 // });
 
 

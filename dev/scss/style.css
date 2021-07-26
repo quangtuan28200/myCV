@@ -20,13 +20,38 @@ a {
 li {
   list-style-type: none; }
 
+.section__wr {
+  transform: translateY(300px);
+  opacity: 0;
+  transition: .6s; }
+  .section__wr.active {
+    transform: translateY(0);
+    opacity: 1; }
 .section__title {
   margin-bottom: 40px;
   font-size: 36px;
   line-height: 42px;
   font-weight: 500;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  --time: 1s;
+  --step: 0; }
+  .section__title::before, .section__title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .section__title::before {
+    background: white;
+    animation: typing var(--time) steps(var(--step)) forwards; }
+  .section__title::after {
+    top: unset;
+    height: 4px;
+    width: 16px;
+    background-color: transparent;
+    animation: typing var(--time) steps(var(--step)) forwards, blinking 0.25s ease alternate-reverse forwards 8; }
 .section__description {
   margin-bottom: 30px; }
 .section__btn {
@@ -35,7 +60,7 @@ li {
 
 @keyframes blinking {
   to {
-    background: transparent; } }
+    background: #555; } }
 @keyframes typing {
   80%, 100% {
     left: 100%; } }
