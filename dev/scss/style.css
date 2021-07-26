@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -261,16 +262,17 @@ header {
     padding: 40px 0;
     display: flex; }
   header .header__avt {
-    width: 30%;
-    transition: .4s ease; }
+    width: 30%; }
     header .header__avt img {
+      transition: .2s;
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 4px; }
   header .header-profile {
-    padding-left: 40px;
-    width: 70%; }
+    transition: .2s;
+    width: 70%;
+    padding-left: 40px; }
     header .header-profile__name {
       font-size: 4.4rem;
       font-weight: 500;
@@ -384,7 +386,7 @@ main {
   opacity: 0;
   transition: .8s ease; }
   main .wide {
-    padding: 80px 80px 0 80px; }
+    padding-top: 100px; }
 
 #hello {
   padding: 60px 0 60px 0; }
@@ -402,11 +404,11 @@ hr {
 #projects {
   padding-top: 60px; }
   #projects .projects__nav ul {
+    display: flex;
     margin-bottom: 30px; }
     #projects .projects__nav ul li {
-      display: inline-block; }
+      margin-right: 50px; }
       #projects .projects__nav ul li a {
-        padding-right: 50px;
         color: #999;
         text-transform: uppercase;
         transition: .2s ease;
@@ -415,7 +417,7 @@ hr {
         #projects .projects__nav ul li a::after {
           content: "";
           position: absolute;
-          right: 40px;
+          right: -8px;
           bottom: 2px;
           width: 7px;
           height: 2px;
@@ -438,7 +440,6 @@ hr {
   #projects .projects-card__img img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover; }
   #projects .projects-card__info {
     padding: 20px 30px; }
@@ -504,3 +505,88 @@ hr {
 
 html:not([scroll='0']) main {
   opacity: 1; }
+
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+  header .header__avt, header .header-profile {
+    width: 50%; } }
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px) {
+  header .header__component {
+    clip-path: ellipse(130% 100% at 50% -8%); }
+  header .header__wrap {
+    flex-direction: column; }
+  header .header__avt, header .header-profile {
+    width: 100%; }
+  header .header__avt {
+    height: 40vh; }
+  header .header-profile {
+    padding-left: 0;
+    padding-top: 40px; }
+
+  #resume .resume__timeline {
+    margin-top: 30px; }
+    #resume .resume__timeline:first-child {
+      margin-top: 0; }
+
+  #skills .skills__timeline {
+    margin-top: 30px; }
+    #skills .skills__timeline:first-child {
+      margin-top: 0; }
+
+  html:not([scroll='0']) header .header__avt {
+    height: unset; } }
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px) {
+  header .header__nav--wr {
+    padding: 16px 0; }
+    header .header__nav--wr ul {
+      justify-content: space-between; }
+      header .header__nav--wr ul li a {
+        padding-right: 0;
+        display: block; }
+  header .header__component {
+    clip-path: none; }
+  header .header__wrap {
+    height: calc(100% - 59px);
+    padding: 0 0 20px 0;
+    flex-direction: column;
+    justify-content: space-between; }
+  header .header__avt, header .header-profile {
+    width: 100%; }
+  header .header__avt {
+    height: 38vh; }
+  header .header-profile {
+    padding-top: 0; }
+    header .header-profile__name {
+      font-size: 3.6rem; }
+    header .header-profile__work {
+      margin-bottom: 16px; }
+
+  #projects .projects__nav ul {
+    display: block; }
+    #projects .projects__nav ul li {
+      padding: 10px 0;
+      margin-right: 0;
+      border-bottom: 1px solid; }
+      #projects .projects__nav ul li:first-child {
+        border-top: 1px solid; }
+  #projects .projects-card__stack {
+    margin-bottom: 0; }
+  #projects .projects-card .tags li {
+    margin-top: 10px; }
+
+  html:not([scroll='0']) header .header__component {
+    width: 100%; } }
+/*Iphone(480 x 640)*/
+/*Smart phone nhỏ*/

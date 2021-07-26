@@ -4,19 +4,28 @@
 }
 
 @mixin responsive($breakpoint){
+    /*Ipad ngang(1024 x 768)*/
+    @if $breakpoint == ipad-horizontal {
+        @media screen and (max-width: 1024px){ @content };
+    }
+    /*Ipad dọc(768 x 1024)*/
+    @if $breakpoint == ipad-vertical {
+        @media screen and (max-width: 768px){ @content };
+    }
+    /*Tablet nhỏ(480 x 640)*/
+    @if $breakpoint == ipad-mini {
+        @media screen and (max-width: 480px){ @content };
+    }
+    /*Iphone(480 x 640)*/
     @if $breakpoint == phone {
-        @media (max-width: 600px){ @content };
+        @media screen and (max-width: 320px){ @content };
     }
-    @if $breakpoint == tablet {
-        @media (max-width: 1200px){ @content };
-    }
-    @if $breakpoint == pc {
-        @media (max-width: 1800px){ @content };
-    }
-    @if $breakpoint == big-pc {
-        @media (min-width: 1800px){ @content };
+    /*Smart phone nhỏ*/
+    @if $breakpoint == phone-mini {
+        @media screen and (max-width: 240px){ @content };
     }
 }
+
 @mixin scroll {
     html:not([scroll='0']) {
         @content

@@ -129,6 +129,15 @@ $('a[data-target-tag]').click(function(e) {
 //     e.stopPropagation();
 // });
 
+$('.header__component').click(function (e) { 
+    e.preventDefault();
+    $('.header__component--cb').prop('checked',false);
+});
+
+$(".header__component--btn").click(function(e) {
+    e.stopPropagation();
+});
+
 
 
 

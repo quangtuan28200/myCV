@@ -131,8 +131,8 @@ header{
 
         &__avt{
             width: 30%;
-            transition: .4s ease;
             img{
+                transition: .2s;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -141,8 +141,9 @@ header{
         }
 
         &-profile{
-            padding-left: 40px;
+            transition: .2s;
             width: 70%;
+            padding-left: 40px;
             &__name{
                 font-size: 4.4rem;
                 font-weight: 500;
