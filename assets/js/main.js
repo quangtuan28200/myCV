@@ -129,12 +129,12 @@ $('a[data-target-tag]').click(function(e) {
 //     e.stopPropagation();
 // });
 
-$('.header__component').click(function (e) { 
+$('.header__component, .header__nav').click(function (e) { 
     e.preventDefault();
-    $('.header__component--cb').prop('checked',false);
+    $('.header__component--cb, .header__nav--cb').prop('checked',false);
 });
 
-$(".header__component--btn").click(function(e) {
+$(".header__component--btn, .header__nav--btn, .header__nav--wr").click(function(e) {
     e.stopPropagation();
 });
 
