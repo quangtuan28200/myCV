@@ -1,6 +1,9 @@
 
 //rest API--------------------------------------------------------------------------------------//
+//deploy
 var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
+//dev
+// var dataAPI = "../../data.json";
 fetch(dataAPI)
     .then((response) => response.json())
     .then((data) => {
@@ -26,6 +29,9 @@ fetch(dataAPI)
        
     })
     .then(()=>{
+        setTimeout(() => {
+            $('.loader').fadeOut(400);
+        }, 400);
         hideNav()
     })
     .catch((err) => console.log(err))
@@ -50,9 +56,9 @@ function profile(dataProfile) {
             <div class="header-profile__contact">
                 <dl>
                     <dt><i class="fas fa-user"></i></dt>
-                    <dd>${dataProfile.work}</dd>
-                    <dt><i class="fas fa-calendar-alt"></i></dt>
                     <dd>${dataProfile.gender}</dd>
+                    <dt><i class="fas fa-calendar-alt"></i></dt>
+                    <dd>${dataProfile.date}</dd>
                     <dt><i class="fas fa-phone-square-alt"></i></dt>
                     <dd><a href="tel:${dataProfile.phone}">${dataProfile.phone}</a></dd>
                     <dt><i class="fas fa-envelope"></i></dt>
@@ -166,12 +172,6 @@ $(window).scroll(function() {
             $(this).find('.section__wr').addClass('active');
         }
     });
-});
-
-//Loader--------------------------------------------------------------------------------------//
-
-$( document ).ready(function() {
-    $('.loader').fadeOut(800);
 });
 
 //project redirect--------------------------------------------------------------------------------------//

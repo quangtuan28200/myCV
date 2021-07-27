@@ -68,6 +68,7 @@
         .header{
             &__nav{
                 &--wr{
+                    padding: 12px 0;
                     ul{
                         justify-content: space-between;
                         li{
@@ -84,18 +85,17 @@
             }
             &__wrap{
                 height: calc(100% - 59px);
-                padding: 0 0 20px 0;
-                flex-direction: column;
-                justify-content: space-between;
+                padding: 0;
             }
             &__avt, &-profile{
                 width: 100%;
             }
             &__avt{
-                height: 38vh;
+                height: 38%;
             }
             &-profile{
-                padding-top: 0;
+                height: 62%;
+                padding-top: 10px;
                 &__name{
                     font-size: 3.6rem;
                 }
@@ -166,7 +166,7 @@
                 padding: 20px 0;
             }
             &__avt{
-                height: 37vh;
+                height: 38%;
             }
             &-profile{
                 &__name{
