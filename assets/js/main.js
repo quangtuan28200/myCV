@@ -1,6 +1,6 @@
 
 //rest API--------------------------------------------------------------------------------------//
-var dataAPI = "https://github.com/quangtuan28200/myCV/blob/dev/data.json";
+var dataAPI = "../../data.json";
 fetch(dataAPI)
     .then((response) => response.json())
     .then((data) => {
