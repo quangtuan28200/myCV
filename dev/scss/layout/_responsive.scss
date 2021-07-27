@@ -152,3 +152,39 @@
         }
     }
 }
+
+@include responsive ('phone'){
+    body{
+        font-size: 1.3rem;
+    }
+    header{
+        .header{
+            &__nav{
+                display: none;
+            }
+            &__wrap{
+                height: 100%;
+                padding: 20px 0;
+            }
+            &__avt{
+                height: 37vh;
+            }
+            &-profile{
+                &__name{
+                    font-size: 2.8rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    @include scroll {
+        header{
+            .header{
+                &__nav{
+                    display: block;
+                }
+            }
+        }
+    }
+}

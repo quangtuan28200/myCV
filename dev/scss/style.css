@@ -590,3 +590,25 @@ html:not([scroll='0']) main {
     width: 100%; } }
 /*Iphone(480 x 640)*/
 /*Smart phone nhỏ*/
+/*Ipad ngang(1024 x 768)*/
+/*Ipad dọc(768 x 1024)*/
+/*Tablet nhỏ(480 x 640)*/
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 1.3rem; }
+
+  header .header__nav {
+    display: none; }
+  header .header__wrap {
+    height: 100%;
+    padding: 20px 0; }
+  header .header__avt {
+    height: 37vh; }
+  header .header-profile__name {
+    font-size: 2.8rem;
+    margin-bottom: 0; }
+
+  html:not([scroll='0']) header .header__nav {
+    display: block; } }
+/*Smart phone nhỏ*/
