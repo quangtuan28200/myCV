@@ -549,13 +549,11 @@ html:not([scroll='0']) main {
 /*Ipad dọc(768 x 1024)*/
 /*Tablet nhỏ(480 x 640)*/
 @media screen and (max-width: 480px) {
-  header .header__nav--wr {
-    padding: 16px 0; }
-    header .header__nav--wr ul {
-      justify-content: space-between; }
-      header .header__nav--wr ul li a {
-        padding-right: 0;
-        display: block; }
+  header .header__nav--wr ul {
+    justify-content: space-between; }
+    header .header__nav--wr ul li a {
+      padding-right: 0;
+      display: block; }
   header .header__component {
     clip-path: none; }
   header .header__wrap {
@@ -611,5 +609,7 @@ html:not([scroll='0']) main {
     margin-bottom: 0; }
 
   html:not([scroll='0']) header .header__nav {
-    display: block; } }
+    display: block; }
+    html:not([scroll='0']) header .header__nav--wr > a {
+      margin: 30px 20px 20px 20px; } }
 /*Smart phone nhỏ*/

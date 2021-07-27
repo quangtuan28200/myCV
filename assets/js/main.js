@@ -1,44 +1,135 @@
 
-//SCROLL CSS
+//rest API--------------------------------------------------------------------------------------//
+var dataAPI = "../../data.json";
+fetch(dataAPI)
+    .then((response) => response.json())
+    .then((data) => {
+        var dataProfile = data.profile;
+        var dataHello = data.hello;
+        var dataResume = data.resume;
+        var dataSkills = data.skills;
+        var dataProjects = data.projects;
 
-// The debounce function receives our function as a parameter
-// const debounce = (fn) => {
+        //profile
+        $('.header__wrap').append(profile(dataProfile));
+        //hello
+        renderDescription('#hello', dataHello);
+        //resume
+        renderDescription('#resume', dataResume.description);
+        renderTimelineItem('.career', dataResume.career);
+        renderTimelineItem('.education', dataResume.education);
+        //skills
+        renderTimelineItem('.pro', dataSkills.professional);
+        renderTimelineItem('.add', dataSkills.additional);
+        //project
+        $('.projects-card').append(projects(dataProjects));
+       
+    })
+    .then(()=>{
+        hideNav()
+    })
+    .catch((err) => console.log(err))
 
-//     // This holds the requestAnimationFrame reference, so we can cancel it if we wish
-//     let frame;
+//render
+function renderDescription(selector, data) {
+    $(`${selector} .section__title`).after(description(data));
+}
+function renderTimelineItem(selector, data) {
+    $(`${selector} .timeline__title`).after(timelineItem(data))
+}
 
-//     // The debounce function returns a new function that can receive a variable number of arguments
-//     return (...params) => {
+//HTML
+function profile(dataProfile) {
+    return `
+        <div class="header__avt">
+            <img src="${dataProfile.avt}" alt="avatar">
+        </div>
+        <div class="header-profile">
+            <p class="header-profile__name">${dataProfile.name}</p>
+            <p class="header-profile__work">${dataProfile.work}</p>
+            <div class="header-profile__contact">
+                <dl>
+                    <dt><i class="fas fa-user"></i></dt>
+                    <dd>${dataProfile.work}</dd>
+                    <dt><i class="fas fa-calendar-alt"></i></dt>
+                    <dd>${dataProfile.gender}</dd>
+                    <dt><i class="fas fa-phone-square-alt"></i></dt>
+                    <dd><a href="tel:${dataProfile.phone}">${dataProfile.phone}</a></dd>
+                    <dt><i class="fas fa-envelope"></i></dt>
+                    <dd><a href="mailto:${dataProfile.email}">${dataProfile.email}</a></dd>
+                    <dt><i class="fas fa-map-marked-alt"></i></dt>
+                    <dd>${dataProfile.address}</dd>
+                </dl>
+            </div>
+            <div class="header-profile__social">
+                <a href="${dataProfile.socials.github}" target="blank"><i class="fab fa-github"></i></a>
+                <a href="${dataProfile.socials.facebook}" target="blank"><i class="fab fa-facebook-square"></i></a>
+            </div>
+        </div>
+    `
+}
+function description(data) {
+    return `
+        <p class="section__description">${data}</p>
+    `
+}
+function timelineItem(data) {
+    var htmlArr = $.map(data, function (el) {
+        return `
+            <div class="timeline__item">
+                <div class="timeline__item-title">${el.title}</div>
+                <div class="timeline__item-date">${el.date}</div>
+                <p class="timeline__item-content">${el.content}</p>
+            </div>
+        `
+    });
+    return htmlArr.join('');
+}
+function projects(data) {
+    function stacks(data) {
+        var stackArr = $.map(data, function (stack) {
+            return `<li>${stack}</li>`
+        });
+        return stackArr.join(''); 
+    }
+    var htmlArr = $.map(data, function (el) {
+        return`
+            <div class="projects-card__wr row no-gutters" data-tag="${el.tag}">
+                <div class="projects-card__img col l-5 m-12 c-12">
+                    <img src="${el.img}" alt="img">
+                </div>
+                <div class="projects-card__info col l-7 m-12 c-12">
+                    <h3 class="projects-card__title">${el.title}</h3>
+                    <p class="projects-card__date">${el.date}</p>
+                    <p class="projects-card__description">${el.description}</p>
+                    <p class="projects-card__stack">Used stack:</p>
+                    <ul class="tags">
+                       ${stacks(el.stacks)}
+                    </ul>
+                    <div class="projects-card__link">
+                        <a href="${el.view}" target="blank"><i class="fas fa-eye"></i>view</a>
+                        <a href="${el.sources}" class="" target="blank"><i class="fas fa-code"></i>source</a>
+                    </div>
+                </div>
+            </div>
+        `
+    });
+    return htmlArr.join('');
+}
 
-//         // If the frame variable has been defined, clear it now, and queue for next frame
-//         if (frame) {
-//             cancelAnimationFrame(frame);
-//         }
+//click to hide nav
+function hideNav() {
+    $('.header__component, .header__nav').click(function (e) { 
+        e.preventDefault();
+        $('.header__component--cb, .header__nav--cb').prop('checked',false);
+    });
+    
+    $(".header__component--btn, .header__nav--btn, .header__nav--wr, .header-profile a").click(function(e) {
+        e.stopPropagation();
+    });
+}
 
-//         // Queue our function call for the next frame
-//         frame = requestAnimationFrame(() => {
-
-//             // Call our function and pass any params we received
-//             fn(...params);
-//         });
-
-//     }
-// };
-
-
-// // Reads out the scroll position and stores it in the data attribute
-// // so we can use it in our stylesheets
-// const storeScroll = () => {
-//     document.documentElement.dataset.scroll = window.scrollY;
-// }
-
-// // Listen for new scroll events, here we debounce our `storeScroll` function
-// document.addEventListener('scroll', debounce(storeScroll), { passive: true });
-
-// // Update scroll position for first time
-// storeScroll();
-
-
+//scroll event-----------------------------------------------------------------------------------------------------------//
 
 $(window).scroll(function() {
     var scrollDistance = $(window).scrollTop();
@@ -129,15 +220,6 @@ $('a[data-target-tag]').click(function(e) {
 //     e.stopPropagation();
 // });
 
-$('.header__component, .header__nav').click(function (e) { 
-    e.preventDefault();
-    $('.header__component--cb, .header__nav--cb').prop('checked',false);
-});
-
-$(".header__component--btn, .header__nav--btn, .header__nav--wr").click(function(e) {
-    e.stopPropagation();
-});
-
-
+//click to hide header__nav, header__component--------------------------------------------------------------------------------------//
 
 

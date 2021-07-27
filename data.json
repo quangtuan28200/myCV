@@ -1,0 +1,85 @@
+{
+    "hello": "I am a Web Developer. Having a knowledge of basic HTML, CSS, SASS, Jquery and ReactJS but have no experience. I would like to have a trainee position suitable to my ability to improve my knowledge and experience. If possible, in the future I want to stick and work with the company for a long time.",
+    "resume": {
+        "description": "I'm a 4th-year student at KMA university (2018-2023). My specialization is Information Technology (Embedded and Mobile Software).In Dec 2020, I started learning about web programming. I enjoy it and spend hours everyday coding, so I decided to stick with this field. I work hard and learn every day, and now I want to find a suitable job to work long-term.",
+        "career": [
+            {"title": "Fullstack Developer", "date": "The next 10 years", "content": "Updating..."},
+            {"title": "Senior Frontend Developer", "date": "The next 4 to 7 years", "content": "Updating..."},
+            {"title": "Junior Frontend Developer", "date": "The next 3 years", "content": "Updating..."}
+        ],
+        "education": [
+            {"title": "Academy Of Cryptography Techniques", "date": "Sep 2018-Current", "content": "I'm a 4th-year student at KMA university (2018-2023). My specialization is Information Technology (Embedded and Mobile Software)."}
+        ]
+    },
+    "skills": {
+        "professional": [
+            {"title": "jquery", "date": "July 2021", "content": "Simple syntax, easy to use, compatible with different browsers"},
+            {"title": "SASS", "date": "July 2021", "content": "CSS Preprocessor"},
+            {"title": "ReactJS", "date": "Jun 2021", "content": "To build better UI"},
+            {"title": "PHP/MySQL", "date": "May 2021", "content": "Learning backend for project at school"},
+            {"title": "HTML/CSS/JS", "date": "Dec 2020", "content": "Start learning about web programming and learn HTML/CSS/JS at <a href='https://fullstack.edu.vn' target='blank'>fullstack.edu.vn</a>"}
+        ],
+        "additional": [
+            {"title": "Git", "date": "May 2021", "content": "Start learning and using git to store and manage code"},
+            {"title": "Teamwork", "date": "", "content": "Through assignments and projects at school"},
+            {"title": "English", "date": "May 2019", "content": "Toiec 560"},
+            {"title": "Self taught", "date": "", "content": "Besides studying at school, I also self-study on websites, youtube,.. to improve my knowledge"}
+        ]
+    },
+    "projects": [
+        {"tag": "landing-pages", 
+            "img": "./assets/imgs/img_project_3.png", 
+            "title": "self taught", 
+            "date": "July 2021", 
+            "description": "A product after learning SASS, based on a course on Hkteam.", 
+            "stacks": ["html", "sass", "responsive"], 
+            "view": "https://quangtuan28200.github.io/FrontEnd_Process/SASS/project/project_hkteam/", 
+            "sources": "https://github.com/quangtuan28200/FrontEnd_Process/tree/main/SASS/project/project_hkteam"},
+        {"tag": "web-sites", 
+            "img": "./assets/imgs/img_project_4.png", 
+            "title": "Kma tech", 
+            "date": "  Jun 2021", 
+            "description": "I make a website that sells electronics for my Web Programming exercise at school, it got 9.5/10 points.", 
+            "stacks": ["html", "css", "javascrip", "php", "mysql"], 
+            "view": "https://www.youtube.com/watch?v=UDfn-MoYKds&list=PLT3Kj-tsxWTLvSy3dfakKFiv8AUEe1ZrF", 
+            "sources": "https://github.com/quangtuan28200/BTL_WEB"},
+        {"tag": "web-sites", 
+            "img": "./assets/imgs/topcv.png", 
+            "title": " TopCV", 
+            "date": " May 2021", 
+            "description": "I make a website that job seeking for my System Analysis and Design exercise at school, it got 8.5/10 points", 
+            "stacks": ["html", "css", "javascrip", "php", "mysql"], 
+            "view": "https://www.youtube.com/watch?v=dI53UeiVsTs&list=PLT3Kj-tsxWTKiNCrCQdfc2ktZY4dx6SuN", 
+            "sources": " https://github.com/quangtuan28200/TopCV"},
+        {"tag": "pages", 
+            "img": "./assets/imgs/img_project_2.png", 
+            "title": "Shoppe", 
+            "date": "Jan 2021", 
+            "description": "The second page, I cloned a page of Shoppe.", 
+            "stacks": ["html", "css", "responsive"], 
+            "view": "https://quangtuan28200.github.io/shoppe", 
+            "sources": "https://github.com/quangtuan28200/shoppe"},
+        {"tag": "pages", 
+            "img": "./assets/imgs/img_project_1.jpg", 
+            "title": "The band", 
+            "date": "Dec 2020", 
+            "description": "The first page, based on a template on w3schools.", 
+            "stacks": ["html", "sass", "responsive"], 
+            "view": "https://quangtuan28200.github.io/the-band", 
+            "sources": "https://github.com/quangtuan28200/the-band"}
+    ],
+    "profile": { 
+        "avt": "./assets/imgs/img_avatar.png",
+        "name": "Bui Quang Tuan_",
+        "work": "Frontend developer",
+        "gender": "Male",
+        "date": "02/08/2000",
+        "phone": "0387126034",
+        "email": "buiquangtuan02082000@gmail.com",
+        "address": "Tan Trieu, Thanh Tri, Ha Noi",
+        "socials": {
+            "github": "https://github.com/quangtuan28200",
+            "facebook": "https://www.facebook.com/bui.quangtuan.104"
+        }
+    }
+}
