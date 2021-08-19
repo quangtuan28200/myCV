@@ -1,9 +1,9 @@
 
 //rest API--------------------------------------------------------------------------------------//
 //deploy
-var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
+// var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
 //dev
-// var dataAPI = "../../data.json";
+var dataAPI = "../../data.json";
 fetch(dataAPI)
     .then((response) => response.json())
     .then((data) => {
@@ -105,13 +105,15 @@ function projects(data) {
                     <img src="${el.img}" alt="img">
                 </div>
                 <div class="projects-card__info col l-7 m-12 c-12">
-                    <h3 class="projects-card__title">${el.title}</h3>
-                    <p class="projects-card__date">${el.date}</p>
-                    <p class="projects-card__description">${el.description}</p>
-                    <p class="projects-card__stack">Used stack:</p>
-                    <ul class="tags">
-                       ${stacks(el.stacks)}
-                    </ul>
+                    <div class="projects-card__detail">
+                        <h3 class="projects-card__title">${el.title}</h3>
+                        <p class="projects-card__date">${el.date}</p>
+                        <p class="projects-card__description">${el.description}</p>
+                        <p class="projects-card__stack">Used stack:</p>
+                        <ul class="tags">
+                        ${stacks(el.stacks)}
+                        </ul>
+                    </div>
                     <div class="projects-card__link">
                         <a href="${el.view}" target="blank"><i class="fas fa-eye"></i>view</a>
                         <a href="${el.sources}" class="" target="blank"><i class="fas fa-code"></i>source</a>

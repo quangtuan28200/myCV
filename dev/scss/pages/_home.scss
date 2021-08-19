@@ -84,6 +84,9 @@ hr{
             }
             &__info{
                 padding: 20px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
             &__title{
                 font-size: 18px;
@@ -122,8 +125,7 @@ hr{
                 }
             }
             &__link{
-                margin-top: 32px;
-                float: right;
+                text-align: right;
                 a{
                     font-size: 14px;
                     line-height: 20px;

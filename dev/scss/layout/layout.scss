@@ -1,0 +1,21 @@
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.container{
+    max-width: 1210px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.row{
+    margin: 0 -12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    padding: 0 12px;
+}

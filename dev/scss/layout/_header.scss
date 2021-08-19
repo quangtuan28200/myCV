@@ -1,14 +1,10 @@
 
 header{
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background-color: $primary-color;
 
     .header{
         &__nav{
-            background-color: $primary-color;
+            display: flex;
             color: white;
             transform: translateX(0);
             transition: .4s ease;
@@ -20,28 +16,30 @@ header{
                 text-align: center;
                 border: 3px solid;
                 border-radius: 4px;
-                margin: 20px;
-                display: none;
                 transition: .4s ease;
+                padding: 0 1rem;
+                line-height: 1.2;
+                letter-spacing: 4px;
+                margin-right: 5rem;
             }
-        
-            &--wr{
-                padding-top: 40px;
+                padding-top: 4rem;
                 ul{
                     display: flex;
+                    align-items: center;
                     li{
+                        margin-right: 3rem;
                         a{
-                            padding-right: 50px;
                             color: white;
                             text-transform: uppercase;
                             font-weight: 500;
                             position: relative;
+                            padding: 1rem 2rem;
 
                             &::after{
                                 content: "";
                                 position: absolute;
-                                right: 40px;
-                                bottom: 2px;
+                                right: 10px;
+                                bottom: 14px;
                                 width: 7px;
                                 height: 2px;
                                 background-color: white;
@@ -56,7 +54,7 @@ header{
                         }
                     }
                 }
-            }
+            
 
             &--cb{
                 display: none;
@@ -99,9 +97,6 @@ header{
 
         &__component{
             color: white;
-            background-color: $primary-color;
-            clip-path: ellipse(100% 100% at 50% -8%);
-            height: 100vh;
             transform: translateX(0);
             transition: .4s ease;
             z-index: 1000;
@@ -131,10 +126,14 @@ header{
 
         &__avt{
             width: 30%;
+            position: relative;
             img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 124%;
                 transition: .2s;
                 width: 100%;
-                height: 100%;
                 object-fit: cover;
                 border-radius: 4px;
             }
@@ -173,6 +172,7 @@ header{
                 }
             }
             &__social{
+                display: flex;
                 a{
                     font-size: 2.4rem;
                     margin-right: 15px;

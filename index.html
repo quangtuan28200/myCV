@@ -11,145 +11,143 @@
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- main CSS  -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./dev/scss/style.css">
 
     <title>MyCV</title>
 </head>
 <body>
-    <div id="home" class="page-section"></div>
-    <header>
-        <!-- checked="checked" -->
-        <input type="checkbox" id="header__nav--cb" class="header__nav--cb">
-        <div class="header__nav grid">
-            <label class="header__nav--btn" for="header__nav--cb"><span></span></label>
-            <div class="header__nav--wr wide">
-                <a href="#" data-scroll="home" class="logo">KMA</a>
-                <ul>
-                    <li><a href="#" data-scroll="hello">hello</a></li>
-                    <li><a href="#" data-scroll="resume">resume</a></li>
-                    <li><a href="#" data-scroll="skills">skills</a></li>
-                    <li><a href="#" data-scroll="projects">projects</a></li>
-                </ul>
-            </div>
-            
-        </div>
-        <input type="checkbox" id="header__component--cb" class="header__component--cb">
-        <div class="header__component grid" width="0">
-            <label class="header__component--btn" for="header__component--cb"><i class="fas fa-info"></i></label>
-            <div class="header__wrap wide">  
-                <!-- content__profile -->
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="grid">
-            <div class="wide">
-                <!-- Hello -->
-                <section id="hello" class="page-section">
-                    <div class="section__wr">
-                        <h2 class="section__title">Hi</h2>
-                        <!-- content__description -->
-                        <a href="#" class="section__btn site-btn"><i class="fas fa-download"></i>dowload cv</a>
+    <div class="wrapper">
+        <div id="home" class="page-section"></div>
+        <header>
+            <div class="container">
+                <div class="header__nav">      
+                    <a href="#" data-scroll="home" class="logo">KMA</a>
+                    <ul>
+                        <li><a href="#" data-scroll="hello">hello</a></li>
+                        <li><a href="#" data-scroll="resume">resume</a></li>
+                        <li><a href="#" data-scroll="skills">skills</a></li>
+                        <li><a href="#" data-scroll="projects">projects</a></li>
+                    </ul>            
+                </div>
+                <div class="header__component" width="0">
+                    <div class="header__wrap">  
+                        <!-- content__profile -->
                     </div>
-                </section>
-                <hr>
-                <!-- Resume -->
-                <section id="resume" class="page-section">
-                    <div class="section__wr">
-                        <h2 class="section__title">Resume</h2>
-                        <!-- content__description -->
-                        <div class="row">
-                            <!-- career goals -->
-                            <div class="resume__timeline career col l-6 m-12 c-12">
-                                <div class="timeline__list">
-                                    <div class="timeline__title">Career goals</div>
-                                    <!-- content__career -->
-                                </div>
-                            </div>
-                            <!-- education -->
-                            <div class="resume__timeline education col l-6 m-12 c-12">
-                                <div class="timeline__list">
-                                    <div class="timeline__title">education</div>
-                                    <!-- content__education -->                                  
-                                </div>
-                            </div>
-                            <!-- experience -->
-                            <!-- <div class="col l-6">
-                                <div class="timeline__list">
-                                    <div class="timeline__title">experience</div>
-                                    <div class="timeline__item">
-                                        <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
-                                        <div class="timeline__item-date">2016-2020</div>
-                                        <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
-                                    </div>
-                                    <div class="timeline__item">
-                                        <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
-                                        <div class="timeline__item-date">2016-2020</div>
-                                        <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
-                                    </div>
-                                    <div class="timeline__item">
-                                        <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
-                                        <div class="timeline__item-date">2016-2020</div>
-                                        <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>        
-                    </div>
-                </section>
-                <!-- Skills -->
-                <section id="skills" class="page-section">
-                    <div class="section__wr">
-                        <h2 class="section__title">Skills</h2>
-                        <div class="row">
-                            <div class="skills__timeline pro col l-6 m-12 c-12">
-                                <div class="timeline__list">
-                                    <div class="timeline__title">PROFESSIONAL SKILLS</div>
-                                    <!-- content__pro -->
-                                </div>
-                            </div>
-                            <div class="skills__timeline add col l-6 m-12 c-12">
-                                <div class="timeline__list">
-                                    <div class="timeline__title">ADDITIONAL SKILLS</div>
-                                    <!-- content__add -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Projects -->
-                <section id="projects" class="page-section">
-                    <div class="section__wr">
-                        <h2 class="section__title">Projects</h2>
-                        <div class="projects__nav">
-                            <ul>
-                                <li><a href="" data-target-tag="all" class="active">all</a></li>
-                                <li><a href="" data-target-tag="web-sites">web-sites</a></li>
-                                <li><a href="" data-target-tag="landing-pages">landing-pages</a></li>
-                                <li><a href="" data-target-tag="pages">pages</a></li>
-                            </ul>
-                        </div>
-                        <div class="projects-card">
-                            <!-- content__projects -->
-                        </div>
-                    </div>
-                </section>
-                <hr>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="grid">
-            <div class="wide">
-                <div class="footer__text">
-                    <i class="far fa-copyright"></i>
-                    2021 by TuanKMA
                 </div>
             </div>
-        </div>
-    </footer>
+        </header>
+    
+        <main>
+            <div class="grid">
+                <div class="wide">
+                    <!-- Hello -->
+                    <section id="hello" class="page-section">
+                        <div class="section__wr">
+                            <h2 class="section__title">Hi</h2>
+                            <!-- content__description -->
+                            <a href="#" class="section__btn site-btn"><i class="fas fa-download"></i>dowload cv</a>
+                        </div>
+                    </section>
+                    <hr>
+                    <!-- Resume -->
+                    <section id="resume" class="page-section">
+                        <div class="section__wr">
+                            <h2 class="section__title">Resume</h2>
+                            <!-- content__description -->
+                            <div class="row">
+                                <!-- career goals -->
+                                <div class="resume__timeline career col l-6 m-12 c-12">
+                                    <div class="timeline__list">
+                                        <div class="timeline__title">Career goals</div>
+                                        <!-- content__career -->
+                                    </div>
+                                </div>
+                                <!-- education -->
+                                <div class="resume__timeline education col l-6 m-12 c-12">
+                                    <div class="timeline__list">
+                                        <div class="timeline__title">education</div>
+                                        <!-- content__education -->                                  
+                                    </div>
+                                </div>
+                                <!-- experience -->
+                                <!-- <div class="col l-6">
+                                    <div class="timeline__list">
+                                        <div class="timeline__title">experience</div>
+                                        <div class="timeline__item">
+                                            <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                                            <div class="timeline__item-date">2016-2020</div>
+                                            <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                                        </div>
+                                        <div class="timeline__item">
+                                            <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                                            <div class="timeline__item-date">2016-2020</div>
+                                            <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                                        </div>
+                                        <div class="timeline__item">
+                                            <div class="timeline__item-title">UNIVERSITY OF MINNESOTA TWIN CITIES</div>
+                                            <div class="timeline__item-date">2016-2020</div>
+                                            <p class="timeline__item-content">Bachelor Computer Engineering Lorem</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>        
+                        </div>
+                    </section>
+                    <!-- Skills -->
+                    <section id="skills" class="page-section">
+                        <div class="section__wr">
+                            <h2 class="section__title">Skills</h2>
+                            <div class="row">
+                                <div class="skills__timeline pro col l-6 m-12 c-12">
+                                    <div class="timeline__list">
+                                        <div class="timeline__title">PROFESSIONAL SKILLS</div>
+                                        <!-- content__pro -->
+                                    </div>
+                                </div>
+                                <div class="skills__timeline add col l-6 m-12 c-12">
+                                    <div class="timeline__list">
+                                        <div class="timeline__title">ADDITIONAL SKILLS</div>
+                                        <!-- content__add -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Projects -->
+                    <section id="projects" class="page-section">
+                        <div class="section__wr">
+                            <h2 class="section__title">Projects</h2>
+                            <div class="projects__nav">
+                                <ul>
+                                    <li><a href="" data-target-tag="all" class="active">all</a></li>
+                                    <li><a href="" data-target-tag="web-sites">web-sites</a></li>
+                                    <li><a href="" data-target-tag="landing-pages">landing-pages</a></li>
+                                    <li><a href="" data-target-tag="pages">pages</a></li>
+                                    <li><a href="" data-target-tag="web-app">web-apps</a></li>
+                                </ul>
+                            </div>
+                            <div class="projects-card">
+                                <!-- content__projects -->
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="grid">
+                <div class="wide">
+                    <div class="footer__text">
+                        <i class="far fa-copyright"></i>
+                        2021 by TuanKMA
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <div class="loader">
         <div class="loader__wr"><div></div><div></div><div></div><div></div><div></div></div>

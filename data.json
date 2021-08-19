@@ -29,46 +29,76 @@
         ]
     },
     "projects": [
-        {"tag": "landing-pages", 
+        {   
+            "tag": "web-app", 
+            "img": "./assets/imgs/weather.png", 
+            "title": "wheather app", 
+            "date": "Aug 2021", 
+            "description": "A small app I created during quarantine.", 
+            "stacks": ["html", "css", "js", "responsive"], 
+            "view": "https://quangtuan28200.github.io/WeatherApp/", 
+            "sources": "https://github.com/quangtuan28200/WeatherApp/"
+        },
+        {   
+            "tag": "landing-pages", 
+            "img": "./assets/imgs/slide.png", 
+            "title": "playground", 
+            "date": "Aug 2021", 
+            "description": "A product after learning cut from PSD design to HTML, CSS.", 
+            "stacks": ["html", "sass", "js", "responsive"], 
+            "view": "https://quangtuan28200.github.io/ThePlayGround/", 
+            "sources": "https://github.com/quangtuan28200/ThePlayGround/"
+        },
+        {   
+            "tag": "landing-pages", 
             "img": "./assets/imgs/img_project_3.png", 
             "title": "self taught", 
             "date": "July 2021", 
             "description": "A product after learning SASS, based on a course on Hkteam.", 
             "stacks": ["html", "sass", "responsive"], 
             "view": "https://quangtuan28200.github.io/FrontEnd_Process/SASS/project/project_hkteam/", 
-            "sources": "https://github.com/quangtuan28200/FrontEnd_Process/tree/main/SASS/project/project_hkteam"},
-        {"tag": "web-sites", 
+            "sources": "https://github.com/quangtuan28200/FrontEnd_Process/tree/main/SASS/project/project_hkteam"
+        },
+        {   
+            "tag": "web-sites", 
             "img": "./assets/imgs/img_project_4.png", 
             "title": "Kma tech", 
             "date": "  Jun 2021", 
             "description": "I make a website that sells electronics for my Web Programming exercise at school, it got 9.5/10 points.", 
             "stacks": ["html", "css", "javascrip", "php", "mysql"], 
             "view": "https://www.youtube.com/watch?v=UDfn-MoYKds&list=PLT3Kj-tsxWTLvSy3dfakKFiv8AUEe1ZrF", 
-            "sources": "https://github.com/quangtuan28200/BTL_WEB"},
-        {"tag": "web-sites", 
+            "sources": "https://github.com/quangtuan28200/BTL_WEB"
+        },
+        {   
+            "tag": "web-sites", 
             "img": "./assets/imgs/topcv.png", 
             "title": " TopCV", 
             "date": " May 2021", 
             "description": "I make a website that job seeking for my System Analysis and Design exercise at school, it got 8.5/10 points", 
             "stacks": ["html", "css", "javascrip", "php", "mysql"], 
             "view": "https://www.youtube.com/watch?v=dI53UeiVsTs&list=PLT3Kj-tsxWTKiNCrCQdfc2ktZY4dx6SuN", 
-            "sources": " https://github.com/quangtuan28200/TopCV"},
-        {"tag": "pages", 
+            "sources": " https://github.com/quangtuan28200/TopCV"
+        },
+        {   
+            "tag": "pages", 
             "img": "./assets/imgs/img_project_2.png", 
             "title": "Shoppe", 
             "date": "Jan 2021", 
             "description": "The second page, I cloned a page of Shoppe.", 
             "stacks": ["html", "css", "responsive"], 
             "view": "https://quangtuan28200.github.io/shoppe", 
-            "sources": "https://github.com/quangtuan28200/shoppe"},
-        {"tag": "pages", 
+            "sources": "https://github.com/quangtuan28200/shoppe"
+        },
+        {   
+            "tag": "pages", 
             "img": "./assets/imgs/img_project_1.jpg", 
             "title": "The band", 
             "date": "Dec 2020", 
             "description": "The first page, based on a template on w3schools.", 
             "stacks": ["html", "sass", "responsive"], 
             "view": "https://quangtuan28200.github.io/the-band", 
-            "sources": "https://github.com/quangtuan28200/the-band"}
+            "sources": "https://github.com/quangtuan28200/the-band"
+        }
     ],
     "profile": { 
         "avt": "./assets/imgs/img_avatar.png",

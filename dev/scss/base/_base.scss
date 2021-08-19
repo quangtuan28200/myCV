@@ -1,12 +1,13 @@
-*{
-    padding: 0;
-    margin: 0;
+
+*,
+*::after,
+*::before{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 html{
-    font-size: $fontSize;
-    // scroll-behavior: smooth;
+    font-size: 62.5%; //1rem = 10px
 }
 
 body{
@@ -23,11 +24,9 @@ body{
 a{
     text-decoration: none;
     color: $text-color;
+    display: block;
 }
 
-li{
-    list-style-type: none;
-}
 
 .section{
     &__wr{
