@@ -1,4 +1,13 @@
 @include responsive ('ipad-horizontal'){
+    header .header__nav ul li a:hover::after {
+        opacity: 0;
+    }
+    header .header__nav ul li a.active::after {
+        opacity: 0;
+    }
+    a.strong:hover {
+        color: $text-color;
+    }
     header{
         .header{
             &__avt{
@@ -128,10 +137,17 @@
         }
         .header{
             &__component{
-                padding-top: 8rem;
+                padding-top: 7rem;
             }
             &__nav{
+                height: 5rem;
+                &.header__nav--active{
+                    ul{
+                        margin-top: 1.4rem;
+                    }
+                }
                 ul{
+                    margin-top: 3rem;
                     justify-content: space-between;
                     li{
                         margin-right: 0;
@@ -157,9 +173,6 @@
 
     header{
         .header{
-            &__component{
-                padding-top: 9rem;
-            }
             &-profile{
                 &__work{
                     margin-bottom: 14px;

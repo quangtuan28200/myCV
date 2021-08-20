@@ -555,6 +555,15 @@ html:not([scroll='0']) main {
 
 /*Ipad ngang(1024 x 768)*/
 @media screen and (max-width: 1024px) {
+  header .header__nav ul li a:hover::after {
+    opacity: 0; }
+
+  header .header__nav ul li a.active::after {
+    opacity: 0; }
+
+  a.strong:hover {
+    color: #555; }
+
   header .header__avt {
     width: 35%; }
   header .header-profile {
@@ -638,11 +647,16 @@ html:not([scroll='0']) main {
   header #backToTop {
     display: none !important; }
   header .header__component {
-    padding-top: 8rem; }
-  header .header__nav ul {
-    justify-content: space-between; }
-    header .header__nav ul li {
-      margin-right: 0; }
+    padding-top: 7rem; }
+  header .header__nav {
+    height: 5rem; }
+    header .header__nav.header__nav--active ul {
+      margin-top: 1.4rem; }
+    header .header__nav ul {
+      margin-top: 3rem;
+      justify-content: space-between; }
+      header .header__nav ul li {
+        margin-right: 0; }
   header .header__wrap {
     padding: 1rem 0; }
   header .header-profile {
@@ -659,7 +673,5 @@ html:not([scroll='0']) main {
   html {
     font-size: 42.5%; }
 
-  header .header__component {
-    padding-top: 9rem; }
   header .header-profile__work {
     margin-bottom: 14px; } }
