@@ -1,8 +1,11 @@
 @include responsive ('ipad-horizontal'){
     header{
         .header{
-            &__avt, &-profile{
-                width: 50%;
+            &__avt{
+                width: 35%;
+            }
+            &-profile{
+                width: 65%;
             }
         }
     }
@@ -12,16 +15,26 @@
     header{
         .header{
             &__component{
-                clip-path: ellipse(130% 100% at 50% -8%);
+                height: 100vh;
+                .container{
+                    height: 100%;
+                    .header__wrap{
+                        height: 100%;
+                    }
+                }
             }
             &__wrap{
                 flex-direction: column;
+                padding: 1rem 0;
             }
             &__avt, &-profile{
                 width: 100%;
             }
             &__avt{
-                height: 40vh;
+                height: 50%;
+                img{
+                    height: 100%;
+                }
             }
             &-profile{
                 padding-left: 0;
@@ -52,60 +65,29 @@
         }
     }
 
-    @include scroll {
-        header{
-            .header{
-                &__avt{
-                    height: unset;
+    footer{
+        .footer{
+            &__contact{
+                ul{
+                    justify-content: unset;
+                    li{
+                        margin-right: 0;
+                        margin-bottom: 2rem;
+                    }
                 }
+            }
+            &__text{
+                padding: 0;
+                padding-bottom: 2rem;
             }
         }
     }
 }
 
 @include responsive ('ipad-mini'){
-    header{
-        .header{
-            &__nav{
-                &--wr{
-                    padding: 12px 0;
-                    ul{
-                        justify-content: space-between;
-                        li{
-                            a{
-                                padding-right: 0;
-                                display: block;
-                            }
-                        }
-                    }
-                }
-            }
-            &__component{
-                clip-path: none;
-            }
-            &__wrap{
-                height: calc(100% - 59px);
-                padding: 0;
-            }
-            &__avt, &-profile{
-                width: 100%;
-            }
-            &__avt{
-                height: 38%;
-            }
-            &-profile{
-                height: 62%;
-                padding-top: 10px;
-                &__name{
-                    font-size: 3.6rem;
-                }
-                &__work{
-                    margin-bottom: 16px;
-                }
-            }
-        }
+    main{
+        margin-top: 0;
     }
-
     #projects{
         .projects{
             &__nav{
@@ -133,60 +115,54 @@
             }
         }
     }
+}
 
-    @include scroll {
-        header{
-            .header{
-                &__component{
-                    width: 100%;
-                    // &--cb{
-                    //     &:checked ~ .header__component{
-                    //         .header__component--btn{
-                    //             right: 0;
-                    //         }
-                    //     }
-                    // }
+@include responsive ('phone'){
+    html{
+        font-size: 52.5%;
+    }
+
+    header{
+        #backToTop{
+            display: none !important;
+        }
+        .header{
+            &__component{
+                padding-top: 8rem;
+            }
+            &__nav{
+                ul{
+                    justify-content: space-between;
+                    li{
+                        margin-right: 0;
+                    }
+                }
+            }
+            &__wrap{
+                padding: 1rem 0;
+            }
+            &-profile{
+                padding-top: 1rem;
+                &__name{
+                    font-size: 3.8rem;
                 }
             }
         }
     }
 }
-
-@include responsive ('phone'){
-    body{
-        font-size: 1.3rem;
+@include responsive ('phone-mini'){
+    html{
+        font-size: 42.5%;
     }
+
     header{
         .header{
-            &__nav{
-                display: none;
-            }
-            &__wrap{
-                height: 100%;
-                padding: 20px 0;
-            }
-            &__avt{
-                height: 38%;
+            &__component{
+                padding-top: 9rem;
             }
             &-profile{
-                &__name{
-                    font-size: 2.8rem;
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-
-    @include scroll {
-        header{
-            .header{
-                &__nav{
-                    display: block;
-                    &--wr{
-                        & > a{
-                            margin: 30px 20px 20px 20px;
-                        }
-                    }
+                &__work{
+                    margin-bottom: 14px;
                 }
             }
         }

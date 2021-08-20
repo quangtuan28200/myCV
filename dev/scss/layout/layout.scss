@@ -19,3 +19,39 @@
 .col{
     padding: 0 12px;
 }
+
+.l-6{
+    flex: 0 0 50%;
+}
+
+.l-5 {
+    flex: 0 0 41.66667%;
+}
+
+.l-7 {
+    flex: 0 0 58.33333%;
+}
+
+.no-gutters{
+    &.row{
+        margin: 0;
+    }
+    .col{
+        padding: 0;
+    }
+}
+
+@include responsive ('ipad-vertical'){
+    .m-6{
+        flex: 0 0 50%;
+    }
+    .m-12{
+        flex: 0 0 100%;
+    }
+}
+
+@include responsive ('ipad-mini'){
+    .s-12{
+        flex: 0 0 100%;
+    }
+}

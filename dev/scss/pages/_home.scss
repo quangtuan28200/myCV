@@ -1,10 +1,5 @@
 main{
-    opacity: 0;
-    transition: .8s ease;
-    .wide{
-        padding-top: 100px;
-        // padding: 80px 80px 0 80px;
-    }
+    margin-top: 100px;
 }
 
 #hello{
@@ -126,6 +121,7 @@ hr{
             }
             &__link{
                 text-align: right;
+                margin-top: 2rem;
                 a{
                     font-size: 14px;
                     line-height: 20px;

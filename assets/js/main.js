@@ -32,7 +32,6 @@ fetch(dataAPI)
         setTimeout(() => {
             $('.loader').fadeOut(400);
         }, 400);
-        hideNav()
     })
     .catch((err) => console.log(err))
 
@@ -125,22 +124,15 @@ function projects(data) {
     return htmlArr.join('');
 }
 
-//click to hide nav
-function hideNav() {
-    $('.header__component, .header__nav').click(function (e) { 
-        e.preventDefault();
-        $('.header__component--cb, .header__nav--cb').prop('checked',false);
-    });
-    
-    $(".header__component--btn, .header__nav--btn, .header__nav--wr, .header-profile a").click(function(e) {
-        e.stopPropagation();
-    });
-}
-
 //scroll event-----------------------------------------------------------------------------------------------------------//
 
 $(window).scroll(function() {
     var scrollDistance = $(window).scrollTop();
+    if(scrollDistance > 0){
+        $('.header__nav').addClass("header__nav--active")
+    }else{
+        $('.header__nav').removeClass("header__nav--active")
+    }
     $('html').attr('scroll', scrollDistance)
     // $('.header__component').attr('width', $('.header__component').width())
 });
@@ -153,7 +145,7 @@ $('a[data-scroll]').click(function(e) {
 	var $target = $(target);
 	//Animate the scroll to, include easing lib if you want more fancypants easings
 	$('html, body').stop().animate({
-	    'scrollTop': $target.offset().top
+	    'scrollTop': $target.offset().top - 50
 	});
 }); 
 
@@ -161,17 +153,21 @@ $(window).scroll(function() {
     var scrollDistance = $(window).scrollTop();
     // Assign active class to nav links while scolling
     $('.page-section').each(function(i) {
-        if (($(this).position().top - $(window).height()*0.4) <= scrollDistance) {
-            //active effect
-            $('.header__nav--wr a.active').removeClass('active');
-            $('.header__nav--wr a').eq(i).addClass('active');
-            
-            //typing efftect
-            var textLength = $(this).find('.section__title').text().length;
-            $(this).find('.section__title').css('--step',textLength);
-
-            //section__wr effect
-            $(this).find('.section__wr').addClass('active');
+        if($(window).scrollTop() > 0){
+            if (($(this).position().top - $(window).height()*0.4) <= scrollDistance) {
+                //active effect
+                $('.header__nav a.active').removeClass('active');
+                $('.header__nav a').eq(i).addClass('active');
+                
+                //typing efftect
+                var textLength = $(this).find('.section__title').text().length;
+                $(this).find('.section__title').css('--step',textLength);
+    
+                //section__wr effect
+                $(this).find('.section__wr').addClass('active');
+            }
+        }else{
+            $('.header__nav a.active').removeClass('active');
         }
     });
 });
@@ -198,30 +194,24 @@ $('a[data-target-tag]').click(function(e) {
     });
 }); 
 
-//show view_wr--------------------------------------------------------------------------------------//
-// $('a[data-view]').click(function (e) { 
-//     e.preventDefault();
-//     var dataView = $(this).data('view');
-//     $('.projects-card__view').each(function (indexInArray, valueOfElement) { 
-//         if($(this).data('view') === dataView){
-//             $(this).find('.view__video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-//             $(this).fadeIn(400)
-//         }
-//     });
-// });
+//back to top ----------------------------------------------------------------------------------------
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function(){
+    scrollFunction();
+};
 
-// $('.projects-card__view').click(function (e) { 
-//     e.preventDefault();
-//     $('.view__video').each(function () { 
-//         $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*'); 
-//     });
-//     $(this).fadeOut(400);
-// });
+function scrollFunction() {
+    if (document.documentElement.scrollTop > 100) {
+        $("#backToTop").fadeIn();
+        document.getElementById("backToTop").style.bottom = "60px";
+    } else {    
+        document.getElementById("backToTop").style.bottom = "40px";
+        $("#backToTop").fadeOut(); 
+    }
+}
 
-// $(".view__wr").click(function(e) {
-//     e.stopPropagation();
-// });
-
-//click to hide header__nav, header__component--------------------------------------------------------------------------------------//
-
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    $("html, body").animate({ scrollTop: 0 }, 300);  
+}
 

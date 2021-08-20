@@ -14,15 +14,15 @@
     }
     /*Tablet nhỏ(480 x 640)*/
     @if $breakpoint == ipad-mini {
-        @media screen and (max-width: 480px){ @content };
+        @media screen and (max-width: 600px){ @content };
     }
     /*Iphone(480 x 640)*/
     @if $breakpoint == phone {
-        @media screen and (max-width: 320px){ @content };
+        @media screen and (max-width: 414px){ @content };
     }
     /*Smart phone nhỏ*/
     @if $breakpoint == phone-mini {
-        @media screen and (max-width: 240px){ @content };
+        @media screen and (max-width: 320px){ @content };
     }
 }
 

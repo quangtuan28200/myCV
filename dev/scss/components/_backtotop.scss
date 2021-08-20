@@ -1,0 +1,17 @@
+#backToTop {
+    display: none;
+    bottom: 40px;
+    position: fixed;
+    right: 14px;
+    z-index: 99;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: white;
+    cursor: pointer;
+    padding: 16px 17px;
+    line-height: 1;
+    opacity: .6;
+    transition: bottom .3s;
+    box-shadow: 0 0 5px white;
+}
