@@ -29,7 +29,7 @@ hr{
                 li{
                     margin-right: 50px;
                     a{
-                        color: #999;
+                        color: $text-color-light;
                         text-transform: uppercase;
                         transition: .2s ease;
                         position: relative;
@@ -38,7 +38,7 @@ hr{
                             content: "";
                             position: absolute;
                             right: -8px;
-                            bottom: 2px;
+                            bottom: 4px;
                             width: 7px;
                             height: 2px;
                             background-color: $primary-color;

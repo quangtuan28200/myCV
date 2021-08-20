@@ -141,11 +141,18 @@ $(window).scroll(function() {
 //ACTIVE BTN WHEN SCROLL
 $('a[data-scroll]').click(function(e) {
 	e.preventDefault();
+
+    //active effect
+    // $('a[data-scroll].active').removeClass('active');
+    // $(this).addClass('active');
+
+    //get name selector tag a 
 	var target = ( '#' + $(this).data('scroll') );
+    //get selector a
 	var $target = $(target);
 	//Animate the scroll to, include easing lib if you want more fancypants easings
 	$('html, body').stop().animate({
-	    'scrollTop': $target.offset().top - 50
+	    'scrollTop': $target.offset().top - 30
 	});
 }); 
 
@@ -215,3 +222,18 @@ function topFunction() {
     $("html, body").animate({ scrollTop: 0 }, 300);  
 }
 
+// html to pdf -----------------------------------------------------------------------
+$(function () {
+    var specialElementHandlers = {
+        '#editor': function (element,renderer) {
+            return true;
+        }
+    };
+ $('#download').click(function () {
+        var doc = new jsPDF();
+        doc.fromHTML($('.wrapper').html(), 15, 15, {
+            'width': 170,'elementHandlers': specialElementHandlers
+        });
+        doc.save('sample-file.pdf');
+    });  
+});

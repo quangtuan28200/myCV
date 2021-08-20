@@ -1,10 +1,16 @@
 @include responsive ('ipad-horizontal'){
+    //disable hover header_nav
+    header .header__nav.header__nav--active a:hover {
+        color: $text-color-light;
+    }
+    header .header__nav.header__nav--active a:hover::after {
+        background-color: $text-color-light;
+        opacity: 0;
+    }
     header .header__nav ul li a:hover::after {
         opacity: 0;
     }
-    header .header__nav ul li a.active::after {
-        opacity: 0;
-    }
+
     a.strong:hover {
         color: $text-color;
     }
@@ -19,7 +25,6 @@
         }
     }
 }
-
 @include responsive ('ipad-vertical'){
     header{
         .header{
@@ -74,6 +79,16 @@
         }
     }
 
+    #projects{
+        .projects{
+            &-card{
+                &__wr{
+                    border: 1px solid #ccc;
+                }
+            }
+        }
+    }
+
     footer{
         .footer{
             &__contact{
@@ -92,7 +107,6 @@
         }
     }
 }
-
 @include responsive ('ipad-mini'){
     main{
         margin-top: 0;
@@ -125,7 +139,6 @@
         }
     }
 }
-
 @include responsive ('phone'){
     html{
         font-size: 52.5%;
@@ -162,6 +175,9 @@
                 &__name{
                     font-size: 3.8rem;
                 }
+                &__work{
+                    margin-bottom: 14px;
+                }
             }
         }
     }
@@ -169,15 +185,5 @@
 @include responsive ('phone-mini'){
     html{
         font-size: 42.5%;
-    }
-
-    header{
-        .header{
-            &-profile{
-                &__work{
-                    margin-bottom: 14px;
-                }
-            }
-        }
     }
 }

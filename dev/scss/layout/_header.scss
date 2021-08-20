@@ -1,6 +1,7 @@
 
 header{
-    background-image: linear-gradient(54deg,rgba($primary-color,.85), rgba($primary-color,.95)), url("../../../assets/imgs/img_avatar.png");
+    background-image: linear-gradient(54deg,rgba($primary-color,.85), rgba($primary-color,.95)), 
+    url("https://quangtuan28200.github.io/myCV/assets/imgs/img_avatar.png");
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -23,9 +24,23 @@ header{
                     margin-top: 2.5rem;
                 }
                 a{
-                    color: $text-color;
+                    color: $text-color-light;
                     &::after{
-                        background-color: $text-color;
+                        background-color: $text-color-light;
+                    }
+                    &:hover{
+                        color: $text-color;
+                        &::after{
+                            background-color: $text-color;
+                            opacity: 1;
+                        }
+                    }
+                    &.active{
+                        color: $text-color !important;
+                        &::after{
+                            background-color: $text-color !important;
+                            opacity: 1 !important;
+                        }
                     }
                 }
             }
@@ -42,45 +57,38 @@ header{
                 letter-spacing: 4px;
                 margin-right: 5rem;
             }
-                ul{
-                    display: flex;
-                    align-items: center;
-                    margin-top: 5rem;
-                    transition: .3s;
-                    li{
-                        margin-right: 5rem;
-                        a{
-                            color: white;
-                            text-transform: uppercase;
-                            font-weight: 500;
-                            position: relative;
-                            line-height: 1;
+            ul{
+                display: flex;
+                align-items: center;
+                margin-top: 5rem;
+                transition: .3s;
+                li{
+                    margin-right: 5rem;
+                    a{
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        position: relative;
+                        line-height: 1;
 
-                            &.active{
-                                &::after{
-                                    opacity: 1;
-                                }
-                            }
-
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            right: -8px;
+                            bottom: -1px;
+                            width: 7px;
+                            height: 2px;
+                            background-color: white;
+                            opacity: 0;
+                        }
+                        &:hover{
                             &::after{
-                                content: "";
-                                position: absolute;
-                                right: -8px;
-                                bottom: -1px;
-                                width: 7px;
-                                height: 2px;
-                                background-color: white;
-                                opacity: 0;
-                                transition: .2s;
-                            }
-                            &:hover{
-                                &::after{
-                                    opacity: 1;
-                                }
+                                opacity: 1;
                             }
                         }
                     }
                 }
+            }
             
 
             &--cb{
