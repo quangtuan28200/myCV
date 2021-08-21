@@ -62,6 +62,7 @@ a {
 .section__btn {
   outline: none;
   cursor: pointer;
+  border: none;
   display: inline-block; }
 
 .wrapper {
@@ -123,7 +124,7 @@ a {
     left: 100%; } }
 .site-btn {
   background: #4a4a4a;
-  padding: 16px 24px;
+  padding: 18px 24px;
   border-radius: 50px;
   color: white;
   text-transform: uppercase;
@@ -448,7 +449,9 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 #resume {
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding: 0 2rem;
+  display: none; }
 
 #skills {
   padding-top: 60px; }
@@ -558,9 +561,6 @@ hr {
       #projects .projects-card__view .view__wr .view__video {
         display: block; }
 
-html:not([scroll='0']) main {
-  opacity: 1; }
-
 /*Ipad ngang(1024 x 768)*/
 @media screen and (max-width: 1024px) {
   header .header__nav.header__nav--active a:hover {
@@ -572,6 +572,9 @@ html:not([scroll='0']) main {
 
   header .header__nav ul li a:hover::after {
     opacity: 0; }
+
+  .site-btn:hover {
+    opacity: 1; }
 
   a.strong:hover {
     color: #555; }
@@ -618,6 +621,9 @@ html:not([scroll='0']) main {
 
   #projects .projects-card__wr {
     border: 1px solid #ccc; }
+  #projects .projects-card .tags li {
+    border: 1px solid #ccc;
+    box-shadow: none; }
 
   footer .footer__contact ul {
     justify-content: unset; }

@@ -223,17 +223,12 @@ function topFunction() {
 }
 
 // html to pdf -----------------------------------------------------------------------
-$(function () {
-    var specialElementHandlers = {
-        '#editor': function (element,renderer) {
-            return true;
-        }
-    };
- $('#download').click(function () {
-        var doc = new jsPDF();
-        doc.fromHTML($('.wrapper').html(), 15, 15, {
-            'width': 170,'elementHandlers': specialElementHandlers
-        });
-        doc.save('sample-file.pdf');
-    });  
-});
+// $('#download').click(() => {
+//     var a = document.getElementById('resume');
+//     // var doc = new jsPDF();
+//     // doc.fromHTML(a, 15, 15)
+//     // doc.save('a.pdf');
+//     html2pdf()
+//         .from(a)
+//         .save();
+// });  

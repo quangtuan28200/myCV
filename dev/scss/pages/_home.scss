@@ -13,6 +13,8 @@ hr{
 
 #resume{
     padding-top: 60px;
+    padding: 0 2rem;
+    display: none;
 }
 
 #skills{
@@ -160,8 +162,3 @@ hr{
     }
 }
 
-@include scroll{
-    main{
-        opacity: 1;
-    }
-}

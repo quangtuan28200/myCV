@@ -11,6 +11,11 @@
         opacity: 0;
     }
 
+    //disable btn hover effect
+    .site-btn:hover {
+        opacity: 1;
+    }
+
     a.strong:hover {
         color: $text-color;
     }
@@ -85,6 +90,12 @@
                 &__wr{
                     border: 1px solid #ccc;
                 }
+                .tags{
+                    li{
+                        border: 1px solid #ccc;
+                        box-shadow: none;
+                    }
+                } 
             }
         }
     }
