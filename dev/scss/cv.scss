@@ -1,0 +1,12 @@
+@import "./abstracts/variablesCV";
+@import './base/base';
+@import './base/baseCV';
+@import './layout/layoutCV.scss';
+
+.cv{
+    padding-top: 5rem;
+    &__wrap{
+        background-color: $background-color;
+        padding: 8mm 6mm;
+    }
+}

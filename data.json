@@ -1,5 +1,5 @@
 {
-    "hello": "I am a Web Developer. Having a knowledge of basic HTML, CSS, SASS, Jquery and ReactJS but have no experience. I would like to have a Front-end Developer trainee position suitable to my ability to improve my knowledge and experience. If possible, in the future I want to stick and work with the company for a long time.",
+    "hello": "I am a Web Developer. Having a knowledge of basic HTML, CSS, SASS, jQuery and ReactJS, experienced in a few personal projects. I would like to have a Front-end Developer trainee position suitable to my ability to improve my knowledge and experience. If possible, in the future, I want to stick and work with the company for a long time.",
     "resume": {
         "description": "I'm a 4th-year student at <a class='strong' href='http://actvn.edu.vn/' target='blank'>KMA university</a> (2018-2023). My specialization is Information Technology (Embedded and Mobile Software).In Dec 2020, I started learning about web programming. I enjoy it and spend hours everyday coding, so I decided to stick with this field. I work hard and learn every day, and now I want to find a suitable job to work long-term.",
         "career": [
@@ -13,7 +13,6 @@
     },
     "skills": {
         "professional": [
-            {"title": "fetch API", "date": "July 2021", "content": "Process data from the back-end via API"},
             {"title": "jquery", "date": "July 2021", "content": "Simple syntax, easy to use, compatible with different browsers"},
             {"title": "SASS", "date": "July 2021", "content": "CSS Preprocessor"},
             {"title": "ReactJS", "date": "Jun 2021", "content": "To build better UI"},
@@ -30,16 +29,6 @@
     },
     "projects": [
         {   
-            "tag": "web-app", 
-            "img": "./assets/imgs/weather.png", 
-            "title": "wheather app", 
-            "date": "Aug 2021", 
-            "description": "A small app I created during quarantine.", 
-            "stacks": ["html", "css", "js", "responsive"], 
-            "view": "https://quangtuan28200.github.io/WeatherApp/", 
-            "sources": "https://github.com/quangtuan28200/WeatherApp/"
-        },
-        {   
             "tag": "landing-pages", 
             "img": "./assets/imgs/slide.png", 
             "title": "playground", 
@@ -48,6 +37,16 @@
             "stacks": ["html", "sass", "js", "responsive"], 
             "view": "https://quangtuan28200.github.io/ThePlayGround/", 
             "sources": "https://github.com/quangtuan28200/ThePlayGround/"
+        },
+        {   
+            "tag": "web-app", 
+            "img": "./assets/imgs/weather.png", 
+            "title": "wheather app", 
+            "date": "Aug 2021", 
+            "description": "A small app I created during quarantine.", 
+            "stacks": ["html", "css", "js", "responsive"], 
+            "view": "https://quangtuan28200.github.io/WeatherApp/", 
+            "sources": "https://github.com/quangtuan28200/WeatherApp/"
         },
         {   
             "tag": "landing-pages", 
@@ -95,7 +94,7 @@
             "title": "The band", 
             "date": "Dec 2020", 
             "description": "The first page, based on a template on w3schools.", 
-            "stacks": ["html", "sass", "responsive"], 
+            "stacks": ["html", "css", "responsive"], 
             "view": "https://quangtuan28200.github.io/the-band", 
             "sources": "https://github.com/quangtuan28200/the-band"
         }
@@ -103,7 +102,7 @@
     "profile": { 
         "avt": "./assets/imgs/img_avatar.png",
         "name": "Bui Quang Tuan_",
-        "work": "Frontend Developer",
+        "work": "Web Developer",
         "gender": "Male",
         "date": "02/08/2000",
         "phone": "0387126034",
@@ -113,5 +112,6 @@
             "github": "https://github.com/quangtuan28200",
             "facebook": "https://www.facebook.com/bui.quangtuan.104"
         }
-    }
+    },
+    "download": "./assets/cv/Bui-Quang-Tuan.pdf"
 }

@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #f8f8f2;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f8f2;
+  display: inline-block;
+}
+a.strong {
+  text-decoration: underline;
+}
+a.strong:hover {
+  color: blue;
+}
+
+.section__wr {
+  transform: translateY(300px);
+  opacity: 0;
+  transition: 0.6s;
+}
+.section__wr.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.section__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  --time: 1s;
+  --step: 0;
+}
+.section__title::before, .section__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.section__title::before {
+  background: white;
+  animation: typing var(--time) steps(var(--step)) forwards;
+}
+.section__title::after {
+  top: unset;
+  height: 4px;
+  width: 16px;
+  background-color: transparent;
+  animation: typing var(--time) steps(var(--step)) forwards, blinking 0.25s ease alternate-reverse forwards 8;
+}
+.section__description {
+  margin-bottom: 30px;
+}
+.section__btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 793px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 -8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  padding: 0 7px;
+}
+
+.cv {
+  padding-top: 5rem;
+}
+.cv__wrap {
+  background-color: #272822;
+  padding: 8mm 6mm;
+}
+
+/*# sourceMappingURL=cv.css.map */

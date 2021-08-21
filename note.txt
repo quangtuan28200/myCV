@@ -1,0 +1,2 @@
+sass dev/scss/style.scss  assets/css/style.css --watch
+ // {"title": "fetch API", "date": "July 2021", "content": "Process data from the back-end via API"},

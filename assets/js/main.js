@@ -1,9 +1,9 @@
 
 //rest API--------------------------------------------------------------------------------------//
 //deploy
-var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
+// var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
 //dev
-// var dataAPI = "../../data.json";
+var dataAPI = "../../data.json";
 fetch(dataAPI)
     .then((response) => response.json())
     .then((data) => {
@@ -12,11 +12,13 @@ fetch(dataAPI)
         var dataResume = data.resume;
         var dataSkills = data.skills;
         var dataProjects = data.projects;
+        var dataDownload = data.download;
 
         //profile
         $('.header__wrap').append(profile(dataProfile));
         //hello
         renderDescription('#hello', dataHello);
+        renderDownloadBtn(dataDownload);
         //resume
         renderDescription('#resume', dataResume.description);
         renderTimelineItem('.career', dataResume.career);
@@ -38,6 +40,9 @@ fetch(dataAPI)
 //render
 function renderDescription(selector, data) {
     $(`${selector} .section__title`).after(description(data));
+}
+function renderDownloadBtn(data) {
+    $('.section__description').after(dowloadBtn(data));
 }
 function renderTimelineItem(selector, data) {
     $(`${selector} .timeline__title`).after(timelineItem(data))
@@ -76,6 +81,11 @@ function profile(dataProfile) {
 function description(data) {
     return `
         <p class="section__description">${data}</p>
+    `
+}
+function dowloadBtn(data) {
+    return `
+        <a href="${data}"  class="section__btn site-btn" ><i class="fas fa-download"></i>dowload cv</a>
     `
 }
 function timelineItem(data) {
@@ -221,14 +231,3 @@ function scrollFunction() {
 function topFunction() {
     $("html, body").animate({ scrollTop: 0 }, 300);  
 }
-
-// html to pdf -----------------------------------------------------------------------
-// $('#download').click(() => {
-//     var a = document.getElementById('resume');
-//     // var doc = new jsPDF();
-//     // doc.fromHTML(a, 15, 15)
-//     // doc.save('a.pdf');
-//     html2pdf()
-//         .from(a)
-//         .save();
-// });  
