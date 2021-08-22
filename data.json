@@ -76,7 +76,7 @@
             "description": "I make a website that job seeking for my System Analysis and Design exercise at school, it got 8.5/10 points", 
             "stacks": ["html", "css", "javascrip", "php", "mysql"], 
             "view": "https://www.youtube.com/watch?v=dI53UeiVsTs&list=PLT3Kj-tsxWTKiNCrCQdfc2ktZY4dx6SuN", 
-            "sources": " https://github.com/quangtuan28200/TopCV"
+            "sources": "https://github.com/quangtuan28200/TopCV"
         },
         {   
             "tag": "pages", 
@@ -113,5 +113,5 @@
             "facebook": "https://www.facebook.com/bui.quangtuan.104"
         }
     },
-    "download": "./assets/cv/Bui-Quang-Tuan.pdf"
+    "download": "./cv.html"
 }

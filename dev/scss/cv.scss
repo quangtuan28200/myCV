@@ -4,9 +4,205 @@
 @import './layout/layoutCV.scss';
 
 .cv{
-    padding-top: 5rem;
+    padding: 5rem 0;
+    background-color: #525659;
     &__wrap{
         background-color: $background-color;
         padding: 8mm 6mm;
+    }
+    &__block{
+        padding: 7px;
+        margin-bottom: 20px;
+        &-nomargin{
+            padding: 7px;
+            margin-bottom: 0;
+        }
+    }
+    &__heading{
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 3px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $text-comment;
+        &-1{
+            font-weight: 700;
+            font-size: 15px;
+            color: $text-header1;
+        }
+        &-2{
+            font-weight: 600;
+            font-size: 15px;
+            color: $text-header2;
+        }
+        &-3{
+            font-weight: 600;
+            color: $text-header1;
+        }
+        &-4{
+            color: $text-header2;
+        }
+    }
+    &__item{
+        position: relative;
+        border-left: 2px solid $text-color;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        &:last-child{
+            padding-bottom: 0;
+        }
+        &::before{
+            content: "";
+            width: 12px;
+            height: 12px;
+            border: 2px solid $text-color;
+            position: absolute;
+            border-radius: 50%;
+            background-color: $background-color;
+            left: 0;
+            top: 0;
+            transform: translateX(-54%);
+        }
+        &-contact{
+            // margin-right: 20px;
+            padding-bottom: 15px;
+            &:last-child{
+                padding-bottom: 0;
+            }
+        }
+    }
+    &__skillrate-bar{
+        position: relative;
+        width: 100%;
+        height: 7px;
+        // &[rate-value=--value] .cv__skillrate{
+        //     width: var(--value * 2 +'%');
+        // }
+    }
+    &__skillrate{
+        width: 80%;
+        height: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $text-color;
+    }
+}
+
+#download{
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    padding: 14px 16px;
+    border-radius: 50%;
+    background-color: $background-color;
+    color: $text-color;
+    cursor: pointer;
+    &:hover{
+        opacity: .8;
+    }
+}
+
+header{
+    .header{
+        &__avt{
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            border: 2px solid $text-color;
+            float: left;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        &__name{
+            margin-bottom: 5px;
+            padding-top: 30px;
+            color: $text-name;
+            font-size: 3.2rem;
+            line-height: 1em;
+            font-weight: 500;
+            padding-left: 124px;
+        }
+        &__work{
+            font-size: 1.8rem;
+            font-weight: 300;
+            padding-left: 124px;
+        }
+        &__contact{
+            text-align: right;
+            line-height: 1.5;
+        }
+    }
+}
+
+.project{
+    &__date{
+        font-size: 13px;
+        color: $text-color;
+    }
+    &__list{
+        .cv__heading-2{
+            margin-bottom: 4px;
+        }
+    }
+    &__item{
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        table{
+            width: 100%;
+            border-top: 1px dashed #666;
+            th{
+                border-bottom: 1px dashed #666;
+                border-right: 1px dashed #666;
+                color: $text-header2;
+                font-size: 13px;
+                vertical-align: middle;
+                width: 33.3333333333%;
+                font-weight: 600;
+                text-align: left;
+            }
+            td{
+                border-bottom: 1px dashed #666;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.resume{
+    &__item{
+        margin-bottom: 28px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.skill{
+    &__item{
+        margin-bottom: 13px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+footer{
+    .footer{
+        &__wr{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__detail{
+            display: flex;
+        }
     }
 }

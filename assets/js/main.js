@@ -1,9 +1,9 @@
 
 //rest API--------------------------------------------------------------------------------------//
 //deploy
-// var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
+var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
 //dev
-var dataAPI = "../../data.json";
+// var dataAPI = "../../data.json";
 fetch(dataAPI)
     .then((response) => response.json())
     .then((data) => {
@@ -85,7 +85,7 @@ function description(data) {
 }
 function dowloadBtn(data) {
     return `
-        <a href="${data}"  class="section__btn site-btn" ><i class="fas fa-download"></i>dowload cv</a>
+        <a target="blank" href="${data}"  class="section__btn site-btn" ><i class="fas fa-download"></i>dowload cv</a>
     `
 }
 function timelineItem(data) {
@@ -125,7 +125,7 @@ function projects(data) {
                     </div>
                     <div class="projects-card__link">
                         <a href="${el.view}" target="blank"><i class="fas fa-eye"></i>view</a>
-                        <a href="${el.sources}" class="" target="blank"><i class="fas fa-code"></i>source</a>
+                        <a href="${el.sources}" target="blank"><i class="fas fa-code"></i>source</a>
                     </div>
                 </div>
             </div>

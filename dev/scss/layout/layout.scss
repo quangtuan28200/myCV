@@ -22,14 +22,17 @@
 
 .l-6{
     flex: 0 0 50%;
+    max-width: 50%;
 }
 
 .l-5 {
     flex: 0 0 41.66667%;
+    max-width: 41.66667%;
 }
 
 .l-7 {
     flex: 0 0 58.33333%;
+    max-width: 58.33333%;
 }
 
 .no-gutters{
@@ -44,14 +47,17 @@
 @include responsive ('ipad-vertical'){
     .m-6{
         flex: 0 0 50%;
+        max-width: 50%;
     }
     .m-12{
         flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
 @include responsive ('ipad-mini'){
     .s-12{
         flex: 0 0 100%;
+        max-width: 100%;
     }
 }
