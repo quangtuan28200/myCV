@@ -72,8 +72,8 @@ function profile(dataProfile) {
                 </dl>
             </div>
             <div class="header-profile__social">
-                <a href="${dataProfile.socials.github}" target="blank"><i class="fab fa-github"></i></a>
-                <a href="${dataProfile.socials.facebook}" target="blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="${dataProfile.socials.github}" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="${dataProfile.socials.facebook}" target="_blank"><i class="fab fa-facebook-square"></i></a>
             </div>
         </div>
     `
@@ -85,7 +85,7 @@ function description(data) {
 }
 function dowloadBtn(data) {
     return `
-        <a target="blank" href="${data}"  class="section__btn site-btn" ><i class="fas fa-download"></i>dowload cv</a>
+        <a target="_blank" href="${data}"  class="section__btn site-btn" ><i class="fas fa-download"></i>dowload cv</a>
     `
 }
 function timelineItem(data) {
@@ -124,8 +124,8 @@ function projects(data) {
                         </ul>
                     </div>
                     <div class="projects-card__link">
-                        <a href="${el.view}" target="blank"><i class="fas fa-eye"></i>view</a>
-                        <a href="${el.sources}" target="blank"><i class="fas fa-code"></i>source</a>
+                        <a href="${el.view}" target="_blank"><i class="fas fa-eye"></i>view</a>
+                        <a href="${el.sources}" target="_blank"><i class="fas fa-code"></i>source</a>
                     </div>
                 </div>
             </div>
