@@ -13,9 +13,9 @@
     },
     "skills": {
         "professional": [
+            {"title": "ReactJS", "date": "April 2022", "content": "To build better UI"},
             {"title": "jquery", "date": "July 2021", "content": "Simple syntax, easy to use, compatible with different browsers"},
             {"title": "SASS", "date": "July 2021", "content": "CSS Preprocessor"},
-            {"title": "ReactJS", "date": "Jun 2021", "content": "To build better UI"},
             {"title": "bootstrap 4", "date": "Jun 2021", "content": "To build faster UI"},
             {"title": "PHP/MySQL", "date": "May 2021", "content": "Learning backend for project at school"},
             {"title": "HTML/CSS/JS", "date": "Dec 2020", "content": "Start learning about web programming and learn HTML/CSS/JS at <a class='strong' href='https://fullstack.edu.vn' target='blank'>fullstack.edu.vn</a>"}
@@ -28,6 +28,16 @@
         ]
     },
     "projects": [
+        {   
+            "tag": "landing-pages", 
+            "img": "./assets/imgs/coffee.jpg", 
+            "title": "coffee", 
+            "date": "Dec 2021", 
+            "description": "A product after learning cut from PSD design to HTML, CSS.", 
+            "stacks": ["html", "sass", "js", "responsive"], 
+            "view": "https://quangtuan28200.github.io/Coffee", 
+            "sources": "https://github.com/quangtuan28200/Coffee"
+        },
         {   
             "tag": "landing-pages", 
             "img": "./assets/imgs/slide.png", 
@@ -63,9 +73,9 @@
             "img": "./assets/imgs/img_project_4.png", 
             "title": "Kma tech", 
             "date": "  Jun 2021", 
-            "description": "I make a website that sells electronics for my Web Programming exercise at school, it got 9.5/10 points.", 
+            "description": "I make a website that sells electronics for my Web Programming exercise at school.", 
             "stacks": ["html", "css", "javascrip", "php", "mysql"], 
-            "view": "https://www.youtube.com/watch?v=UDfn-MoYKds&list=PLT3Kj-tsxWTLvSy3dfakKFiv8AUEe1ZrF", 
+            "view": "http://actlearning.lovestoblog.com", 
             "sources": "https://github.com/quangtuan28200/BTL_WEB"
         },
         {   
@@ -73,7 +83,7 @@
             "img": "./assets/imgs/topcv.png", 
             "title": " TopCV", 
             "date": " May 2021", 
-            "description": "I make a website that job seeking for my System Analysis and Design exercise at school, it got 8.5/10 points", 
+            "description": "I make a website that job seeking for my System Analysis and Design exercise at school", 
             "stacks": ["html", "css", "javascrip", "php", "mysql"], 
             "view": "https://www.youtube.com/watch?v=dI53UeiVsTs&list=PLT3Kj-tsxWTKiNCrCQdfc2ktZY4dx6SuN", 
             "sources": "https://github.com/quangtuan28200/TopCV"
@@ -100,7 +110,7 @@
         }
     ],
     "profile": { 
-        "avt": "./assets/imgs/img_avatar.png",
+        "avt": "./assets/imgs/avatar.png",
         "name": "Bui Quang Tuan_",
         "work": "Web Developer",
         "gender": "Male",

@@ -296,7 +296,10 @@ a.strong:hover {
 }
 
 header {
-  background-image: linear-gradient(54deg, rgba(74, 74, 74, 0.85), rgba(74, 74, 74, 0.95)), url("https://quangtuan28200.github.io/myCV/assets/imgs/img_avatar.png");
+  /* deploy */
+  background-image: linear-gradient(54deg, rgba(74, 74, 74, 0.85), rgba(74, 74, 74, 0.95)), url("https://quangtuan28200.github.io/myCV/assets/imgs/bg-header.jpg");
+  /* dev */
+  /* background-image: linear-gradient(54deg, rgba(74, 74, 74, 0.85), rgba(74, 74, 74, 0.95)), url("../imgs/1.jpg"); */
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -448,6 +451,7 @@ header .header__avt img {
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
+  filter: grayscale(100%);
 }
 header .header-profile {
   transition: 0.2s;
@@ -610,6 +614,9 @@ hr {
 }
 #projects .projects-card__wr:hover {
   box-shadow: 0 1px 30px rgba(0, 0, 0, 0.09);
+}
+#projects .projects-card__img{
+  height: 300px;
 }
 #projects .projects-card__img img {
   width: 100%;

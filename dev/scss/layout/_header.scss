@@ -1,7 +1,7 @@
 
 header{
     background-image: linear-gradient(54deg,rgba($primary-color,.85), rgba($primary-color,.95)), 
-    url("https://quangtuan28200.github.io/myCV/assets/imgs/img_avatar.png");
+    url("https://quangtuan28200.github.io/myCV/assets/imgs/bg-header.jpg");
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -169,6 +169,7 @@ header{
                 width: 100%;
                 object-fit: cover;
                 border-radius: 4px;
+                filter: grayscale(100%);
             }
         }
 
