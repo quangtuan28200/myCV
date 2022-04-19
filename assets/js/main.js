@@ -57,8 +57,6 @@ function profile(dataProfile) {
             <p class="header-profile__work">${dataProfile.work}</p>
             <div class="header-profile__contact">
                 <dl>
-                    <dt><i class="fas fa-user"></i></dt>
-                    <dd>${dataProfile.gender}</dd>
                     <dt><i class="fas fa-calendar-alt"></i></dt>
                     <dd>${dataProfile.date}</dd>
                     <dt><i class="fas fa-phone-square-alt"></i></dt>

@@ -111,13 +111,12 @@
     ],
     "profile": { 
         "avt": "./assets/imgs/avatar.png",
-        "name": "Bui Quang Tuan_",
+        "name": "Bùi Quang Tuấn_",
         "work": "Web Developer",
-        "gender": "Male",
         "date": "02/08/2000",
         "phone": "0387126034",
         "email": "buiquangtuan02082000@gmail.com",
-        "address": "Tan Trieu, Thanh Tri, Ha Noi",
+        "address": "Tân Triều, Thanh Trì, Hà Nội",
         "socials": {
             "github": "https://github.com/quangtuan28200",
             "facebook": "https://www.facebook.com/bui.quangtuan.104"
