@@ -13,7 +13,7 @@
     },
     "skills": {
         "professional": [
-            {"title": "ReactJS & Native", "date": "April 2022", "content": "To build better UI"},
+            {"title": "ReactJS & Native", "date": "April 2022", "content": "To build better UI Web and Native App"},
             {"title": "jquery", "date": "July 2021", "content": "Simple syntax, easy to use, compatible with different browsers"},
             {"title": "SASS", "date": "July 2021", "content": "CSS Preprocessor"},
             {"title": "bootstrap 4", "date": "Jun 2021", "content": "To build faster UI"},
