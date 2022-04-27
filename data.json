@@ -29,6 +29,16 @@
     },
     "projects": [
         {   
+            "tag": "web-sites", 
+            "img": "./assets/imgs/learnit.jpeg", 
+            "title": "LearnIt", 
+            "date": "April 2022", 
+            "description": "A product to learn MERN", 
+            "stacks": ["html", "css", "js", "bootstrap", "NodeJS", "ReactJs", "MongoDB"], 
+            "view": "https://effortless-snickerdoodle-75dba5.netlify.app", 
+            "sources": "https://github.com/quangtuan28200/MERN"
+        },
+        {   
             "tag": "landing-pages", 
             "img": "./assets/imgs/coffee.jpg", 
             "title": "coffee", 

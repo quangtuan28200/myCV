@@ -1,8 +1,8 @@
 //rest API--------------------------------------------------------------------------------------//
 //deploy
-var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
+// var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
 //dev
-// var dataAPI = "../../data.json";
+var dataAPI = "../../data.json";
 fetch(dataAPI)
   .then((response) => response.json())
   .then((data) => {
@@ -17,7 +17,7 @@ fetch(dataAPI)
     $(".header__wrap").append(profile(dataProfile));
     //hello
     renderDescription("#hello", dataHello);
-    renderDownloadBtn(dataDownload);
+    // renderDownloadBtn(dataDownload);
     //resume
     renderDescription("#resume", dataResume.description);
     renderTimelineItem(".career", dataResume.career);
