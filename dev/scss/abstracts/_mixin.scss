@@ -18,7 +18,7 @@
     }
     /*Iphone(480 x 640)*/
     @if $breakpoint == phone {
-        @media screen and (max-width: 414px){ @content };
+        @media screen and (max-width: 428px){ @content };
     }
     /*Smart phone nhỏ*/
     @if $breakpoint == phone-mini {

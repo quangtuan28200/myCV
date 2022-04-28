@@ -1,30 +1,30 @@
 {
-    "hello": "I am a Web Developer. Having a knowledge of basic HTML, CSS, SASS, jQuery and ReactJS, experienced in a few personal projects. I would like to have a Front-end Developer trainee position suitable to my ability to improve my knowledge and experience. If possible, in the future, I want to stick and work with the company for a long time.",
+    "hello": "Xin chào, tôi là Tuấn, một Web Developer. Có kiến thức và kinh nghiệm về Front-end ",
     "resume": {
-        "description": "I'm a 4th-year student at <a class='strong' href='http://actvn.edu.vn/' target='blank'>KMA university</a> (2018-2023). My specialization is Information Technology (Embedded and Mobile Software).In Dec 2020, I started learning about web programming. I enjoy it and spend hours everyday coding, so I decided to stick with this field. I work hard and learn every day, and now I want to find a suitable job to work long-term.",
+        "description": "",
         "career": [
-            {"title": "Lead Frontend/ Fullstack Developer", "date": "The next 10 years", "content": "Updating..."},
-            {"title": "Senior Frontend Developer", "date": "The next 4 to 7 years", "content": "Updating..."},
-            {"title": "Junior Frontend Developer", "date": "The next 3 years", "content": "Updating..."}
+            {"title": "Lead Frontend/ Fullstack Developer", "date": "10 năm tới", "content": ""},
+            {"title": "Senior Frontend Developer", "date": "4 đến 7 năm tới", "content": ""},
+            {"title": "Junior Frontend Developer", "date": "3 năm tới", "content": ""}
         ],
         "education": [
-            {"title": "Academy Of Cryptography Techniques", "date": "Sep 2018-Current", "content": "I'm a 4th-year student at <a class='strong' href='http://actvn.edu.vn/' target='blank'>KMA university</a> (2018-2023). My specialization is Information Technology (Embedded and Mobile Software)."}
+            {"title": "Học viện kỹ thuật mật mã", "date": "10/2018-6/2023", "content": "Công nghệ thông tin."}
         ]
     },
     "skills": {
         "professional": [
-            {"title": "ReactJS & Native", "date": "April 2022", "content": "To build better UI Web and Native App"},
-            {"title": "jquery", "date": "July 2021", "content": "Simple syntax, easy to use, compatible with different browsers"},
-            {"title": "SASS", "date": "July 2021", "content": "CSS Preprocessor"},
-            {"title": "bootstrap 4", "date": "Jun 2021", "content": "To build faster UI"},
-            {"title": "PHP/MySQL", "date": "May 2021", "content": "Learning backend for project at school"},
-            {"title": "HTML/CSS/JS", "date": "Dec 2020", "content": "Start learning about web programming and learn HTML/CSS/JS at <a class='strong' href='https://fullstack.edu.vn' target='blank'>fullstack.edu.vn</a>"}
+            {"title": "ReactJS & Native", "date": "4/2022", "content": "To build better UI Web and Native App"},
+            {"title": "jquery", "date": "7/2021", "content": "Simple syntax, easy to use, compatible with different browsers"},
+            {"title": "SASS", "date": "7/2021", "content": "CSS Preprocessor"},
+            {"title": "bootstrap 4", "date": "6/2021", "content": "To build faster UI"},
+            {"title": "PHP/MySQL", "date": "5/2021", "content": "Learning backend for project at school"},
+            {"title": "HTML/CSS/JS", "date": "12/2020", "content": "Start learning about web programming and learn HTML/CSS/JS at <a class='strong' href='https://fullstack.edu.vn' target='blank'>fullstack.edu.vn</a>"}
         ],
         "additional": [
             {"title": "Git", "date": "May 2021", "content": "Start learning and using git to store and manage code"},
-            {"title": "Teamwork", "date": "", "content": "Through assignments and projects at school"},
+            {"title": "Làm việc nhóm", "date": "", "content": "Through assignments and projects at school"},
             {"title": "English", "date": "May 2019", "content": "Toiec 560"},
-            {"title": "Self taught", "date": "", "content": "Besides studying at school, I also self-study on websites, youtube,.. to improve my knowledge"}
+            {"title": "Tự học", "date": "", "content": "Besides studying at school, I also self-study on websites, youtube,.. to improve my knowledge"}
         ]
     },
     "projects": [
@@ -32,7 +32,7 @@
             "tag": "web-sites", 
             "img": "./assets/imgs/learnit.jpeg", 
             "title": "LearnIt", 
-            "date": "April 2022", 
+            "date": "4/2022", 
             "description": "A product to learn MERN", 
             "stacks": ["html", "css", "js", "bootstrap", "NodeJS", "ReactJs", "MongoDB"], 
             "view": "https://effortless-snickerdoodle-75dba5.netlify.app", 
@@ -42,7 +42,7 @@
             "tag": "landing-pages", 
             "img": "./assets/imgs/coffee.jpg", 
             "title": "coffee", 
-            "date": "Dec 2021", 
+            "date": "12/2021", 
             "description": "A product after learning cut from PSD design to HTML, CSS.", 
             "stacks": ["html", "sass", "js", "responsive"], 
             "view": "https://quangtuan28200.github.io/Coffee", 
@@ -52,7 +52,7 @@
             "tag": "landing-pages", 
             "img": "./assets/imgs/slide.png", 
             "title": "playground", 
-            "date": "Aug 2021", 
+            "date": "8/2021", 
             "description": "A product after learning cut from PSD design to HTML, CSS.", 
             "stacks": ["html", "sass", "js", "responsive"], 
             "view": "https://quangtuan28200.github.io/ThePlayGround/", 
@@ -62,7 +62,7 @@
             "tag": "web-app", 
             "img": "./assets/imgs/weather.png", 
             "title": "wheather app", 
-            "date": "Aug 2021", 
+            "date": "8/2021", 
             "description": "A small app I created during quarantine.", 
             "stacks": ["html", "css", "js", "responsive"], 
             "view": "https://quangtuan28200.github.io/WeatherApp/", 
@@ -72,7 +72,7 @@
             "tag": "landing-pages", 
             "img": "./assets/imgs/img_project_3.png", 
             "title": "self taught", 
-            "date": "July 2021", 
+            "date": "7/2021", 
             "description": "A product after learning SASS, based on a course on Hkteam.", 
             "stacks": ["html", "sass", "responsive"], 
             "view": "https://quangtuan28200.github.io/FrontEnd_Process/SASS/project/project_hkteam/", 
@@ -82,7 +82,7 @@
             "tag": "web-sites", 
             "img": "./assets/imgs/img_project_4.png", 
             "title": "Kma tech", 
-            "date": "  Jun 2021", 
+            "date": "6/2021", 
             "description": "I make a website that sells electronics for my Web Programming exercise at school.", 
             "stacks": ["html", "css", "javascrip", "php", "mysql"], 
             "view": "http://actlearning.lovestoblog.com", 
@@ -92,7 +92,7 @@
             "tag": "web-sites", 
             "img": "./assets/imgs/topcv.png", 
             "title": " TopCV", 
-            "date": " May 2021", 
+            "date": "5/2021", 
             "description": "I make a website that job seeking for my System Analysis and Design exercise at school", 
             "stacks": ["html", "css", "javascrip", "php", "mysql"], 
             "view": "https://www.youtube.com/watch?v=dI53UeiVsTs&list=PLT3Kj-tsxWTKiNCrCQdfc2ktZY4dx6SuN", 
@@ -102,7 +102,7 @@
             "tag": "pages", 
             "img": "./assets/imgs/img_project_2.png", 
             "title": "Shoppe", 
-            "date": "Jan 2021", 
+            "date": "1/2021", 
             "description": "The second page, I cloned a page of Shoppe.", 
             "stacks": ["html", "css", "responsive"], 
             "view": "https://quangtuan28200.github.io/shoppe", 
@@ -112,7 +112,7 @@
             "tag": "pages", 
             "img": "./assets/imgs/img_project_1.jpg", 
             "title": "The band", 
-            "date": "Dec 2020", 
+            "date": "12/2020", 
             "description": "The first page, based on a template on w3schools.", 
             "stacks": ["html", "css", "responsive"], 
             "view": "https://quangtuan28200.github.io/the-band", 
@@ -120,7 +120,7 @@
         }
     ],
     "profile": { 
-        "avt": "./assets/imgs/avatar.png",
+        "avt": "./assets/imgs/avatar.jpg",
         "name": "Bùi Quang Tuấn_",
         "work": "Web Developer",
         "date": "02/08/2000",

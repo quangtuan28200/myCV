@@ -2,7 +2,7 @@
 //deploy
 // var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
 //dev
-var dataAPI = "../../data.json";
+var dataAPI = "../../dataVN.json";
 fetch(dataAPI)
   .then((response) => response.json())
   .then((data) => {
@@ -19,7 +19,7 @@ fetch(dataAPI)
     renderDescription("#hello", dataHello);
     // renderDownloadBtn(dataDownload);
     //resume
-    renderDescription("#resume", dataResume.description);
+    // renderDescription("#resume", dataResume.description);
     renderTimelineItem(".career", dataResume.career);
     renderTimelineItem(".education", dataResume.education);
     //skills
@@ -212,6 +212,43 @@ $("a[data-target-tag]").click(function (e) {
         $(this).fadeIn(800);
       }
     }
+  });
+});
+
+//change lang ----------------------------------------------------------------------------------------
+var tnum = "en";
+
+$(document).ready(function () {
+  $(document).click(function (e) {
+    $(".translate_wrapper, .more_lang").removeClass("active");
+  });
+
+  $(".translate_wrapper .current_lang").click(function (e) {
+    e.stopPropagation();
+    $(this).parent().toggleClass("active");
+
+    setTimeout(function () {
+      $(".more_lang").toggleClass("active");
+    }, 5);
+  });
+
+  $(".more_lang .lang").click(function () {
+    $(this).addClass("selected").siblings().removeClass("selected");
+    $(".more_lang").removeClass("active");
+
+    var lang = $(this).children().text();
+    var data = $(this).attr("data-value");
+
+    console.log(data);
+    console.log(lang);
+
+    $(".current_lang .lang-txt").text(lang);
+
+    // if (lang == "ar") {
+    //   $("body").attr("dir", "rtl");
+    // } else {
+    //   $("body").attr("dir", "ltr");
+    // }
   });
 });
 

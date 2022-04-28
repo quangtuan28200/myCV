@@ -43,6 +43,9 @@ header{
                         }
                     }
                 }
+                .translate_wrapper{
+                    display: none;
+                }
             }
 
             .logo{
@@ -62,6 +65,7 @@ header{
                 align-items: center;
                 margin-top: 5rem;
                 transition: .3s;
+                position: relative;
                 li{
                     margin-right: 5rem;
                     a{
@@ -88,9 +92,50 @@ header{
                         }
                     }
                 }
+
+                .translate_wrapper {
+                    position: absolute;
+                    right: 0;
+                    .current_lang {
+                        cursor: pointer;
+                        // text-transform: uppercase;
+                        overflow: hidden;
+                        
+                        span.fa {
+                            font-size: 12px;
+                            position: relative;
+                            top: -1px;
+                        }
+                    }
+                    .more_lang {
+                        position: absolute;
+                        top: 0;
+                        right: 20px;
+                        opacity: 0;
+                        cursor: pointer;
+                        display: none;
+                        -webkit-transition: all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+                        -moz-transition: all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+                        -o-transition: all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+                        -ms-transition: all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+                        transition: all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+                        &.active {
+                            opacity: 1;
+                            top: 28px;
+                        }
+                        .lang.selected{
+                            display: none;
+                        }
+                    }
+                    &.active .more_lang {
+                        display: block;
+                    }
+                    span.lang-txt {
+                        font-weight: 500;
+                    }
+                }
             }
             
-
             &--cb{
                 display: none;
             }
@@ -169,7 +214,6 @@ header{
                 width: 100%;
                 object-fit: cover;
                 border-radius: 4px;
-                filter: grayscale(100%);
             }
         }
 

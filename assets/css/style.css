@@ -103,14 +103,17 @@ a.strong:hover {
 
 .l-6 {
   flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .l-5 {
   flex: 0 0 41.66667%;
+  max-width: 41.66667%;
 }
 
 .l-7 {
   flex: 0 0 58.33333%;
+  max-width: 58.33333%;
 }
 
 .no-gutters.row {
@@ -125,10 +128,12 @@ a.strong:hover {
 @media screen and (max-width: 768px) {
   .m-6 {
     flex: 0 0 50%;
+    max-width: 50%;
   }
 
   .m-12 {
     flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 /*Tablet nhỏ(480 x 640)*/
@@ -140,6 +145,7 @@ a.strong:hover {
 @media screen and (max-width: 600px) {
   .s-12 {
     flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 /*Iphone(480 x 640)*/
@@ -232,7 +238,7 @@ a.strong:hover {
 }
 .timeline__title {
   line-height: 20px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 600;
   color: #999;
@@ -241,7 +247,7 @@ a.strong:hover {
 .timeline__item {
   border-left: 2px solid #4a4a4a;
   padding-left: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   position: relative;
 }
 .timeline__item::before {
@@ -296,10 +302,7 @@ a.strong:hover {
 }
 
 header {
-  /* deploy */
   background-image: linear-gradient(54deg, rgba(74, 74, 74, 0.85), rgba(74, 74, 74, 0.95)), url("https://quangtuan28200.github.io/myCV/assets/imgs/bg-header.jpg");
-  /* dev */
-  /* background-image: linear-gradient(54deg, rgba(74, 74, 74, 0.85), rgba(74, 74, 74, 0.95)), url("../imgs/1.jpg"); */
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -341,6 +344,9 @@ header .header__nav.header__nav--active a.active::after {
   background-color: #555 !important;
   opacity: 1 !important;
 }
+header .header__nav.header__nav--active .translate_wrapper {
+  display: none;
+}
 header .header__nav .logo {
   color: white;
   font-size: 4rem;
@@ -358,6 +364,7 @@ header .header__nav ul {
   align-items: center;
   margin-top: 5rem;
   transition: 0.3s;
+  position: relative;
 }
 header .header__nav ul li {
   margin-right: 5rem;
@@ -381,6 +388,45 @@ header .header__nav ul li a::after {
 }
 header .header__nav ul li a:hover::after {
   opacity: 1;
+}
+header .header__nav ul .translate_wrapper {
+  position: absolute;
+  right: 0;
+}
+header .header__nav ul .translate_wrapper .current_lang {
+  cursor: pointer;
+  overflow: hidden;
+}
+header .header__nav ul .translate_wrapper .current_lang span.fa {
+  font-size: 12px;
+  position: relative;
+  top: -1px;
+}
+header .header__nav ul .translate_wrapper .more_lang {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 1.15, 0.35, 1.15);
+  -moz-transition: all 0.3s cubic-bezier(0.25, 1.15, 0.35, 1.15);
+  -o-transition: all 0.3s cubic-bezier(0.25, 1.15, 0.35, 1.15);
+  -ms-transition: all 0.3s cubic-bezier(0.25, 1.15, 0.35, 1.15);
+  transition: all 0.3s cubic-bezier(0.25, 1.15, 0.35, 1.15);
+}
+header .header__nav ul .translate_wrapper .more_lang.active {
+  opacity: 1;
+  top: 28px;
+}
+header .header__nav ul .translate_wrapper .more_lang .lang.selected {
+  display: none;
+}
+header .header__nav ul .translate_wrapper.active .more_lang {
+  display: block;
+}
+header .header__nav ul .translate_wrapper span.lang-txt {
+  font-weight: 500;
 }
 header .header__nav--cb {
   display: none;
@@ -451,7 +497,6 @@ header .header__avt img {
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
-  filter: grayscale(100%);
 }
 header .header-profile {
   transition: 0.2s;
@@ -615,8 +660,8 @@ hr {
 #projects .projects-card__wr:hover {
   box-shadow: 0 1px 30px rgba(0, 0, 0, 0.09);
 }
-#projects .projects-card__img{
-  height: 300px;
+#projects .projects-card__img {
+  height: 280px;
 }
 #projects .projects-card__img img {
   width: 100%;
@@ -834,7 +879,7 @@ hr {
 /*Ipad dọc(768 x 1024)*/
 /*Tablet nhỏ(480 x 640)*/
 /*Iphone(480 x 640)*/
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
   html {
     font-size: 52.5%;
   }
@@ -857,6 +902,9 @@ hr {
   }
   header .header__nav ul li {
     margin-right: 0;
+  }
+  header .header__nav ul .translate_wrapper {
+    display: none;
   }
   header .header__wrap {
     padding: 1rem 0;
