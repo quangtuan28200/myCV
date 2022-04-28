@@ -70,7 +70,10 @@ hr{
                 }
             }
             &__img{
-                height: 280px;
+                max-height: 320px;
+                a{
+                  display: unset;
+                }
                 img{
                     width: 100%;
                     height: 100%;

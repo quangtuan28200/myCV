@@ -661,7 +661,10 @@ hr {
   box-shadow: 0 1px 30px rgba(0, 0, 0, 0.09);
 }
 #projects .projects-card__img {
-  height: 280px;
+  max-height: 320px;
+}
+#projects .projects-card__img a {
+  display: unset;
 }
 #projects .projects-card__img img {
   width: 100%;

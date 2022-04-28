@@ -1,8 +1,8 @@
 //rest API--------------------------------------------------------------------------------------//
 //deploy
-// var dataAPI = "https://quangtuan28200.github.io/myCV/data.json";
+var dataAPI = "https://quangtuan28200.github.io/myCV/dataVN.json";
 //dev
-var dataAPI = "../../dataVN.json";
+// var dataAPI = "../../dataVN.json";
 fetch(dataAPI)
   .then((response) => response.json())
   .then((data) => {
@@ -107,7 +107,9 @@ function projects(data) {
     return `
             <div class="projects-card__wr row no-gutters" data-tag="${el.tag}">
                 <div class="projects-card__img col l-5 m-12 c-12">
-                    <img src="${el.img}" alt="img">
+                    <a href="${el.view}" target="_blank">
+                        <img src="${el.img}" alt="img">
+                    </a>
                 </div>
                 <div class="projects-card__info col l-7 m-12 c-12">
                     <div class="projects-card__detail">
@@ -236,21 +238,15 @@ $(document).ready(function () {
     $(this).addClass("selected").siblings().removeClass("selected");
     $(".more_lang").removeClass("active");
 
-    var lang = $(this).children().text();
-    var data = $(this).attr("data-value");
-
-    console.log(data);
-    console.log(lang);
+    let lang = $(this).children().text();
 
     $(".current_lang .lang-txt").text(lang);
-
-    // if (lang == "ar") {
-    //   $("body").attr("dir", "rtl");
-    // } else {
-    //   $("body").attr("dir", "ltr");
-    // }
   });
 });
+
+function getData(lang) {
+  return lang === "vn" ? "../../dataVN.json" : "../../dataEN.json";
+}
 
 //back to top ----------------------------------------------------------------------------------------
 // When the user scrolls down 20px from the top of the document, show the button
