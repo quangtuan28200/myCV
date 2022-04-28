@@ -13,18 +13,18 @@
     },
     "skills": {
         "professional": [
-            {"title": "ReactJS & Native", "date": "4/2022", "content": "To build better UI Web and Native App"},
-            {"title": "jquery", "date": "7/2021", "content": "Simple syntax, easy to use, compatible with different browsers"},
-            {"title": "SASS", "date": "7/2021", "content": "CSS Preprocessor"},
-            {"title": "bootstrap 4", "date": "6/2021", "content": "To build faster UI"},
-            {"title": "PHP/MySQL", "date": "5/2021", "content": "Learning backend for project at school"},
-            {"title": "HTML/CSS/JS", "date": "12/2020", "content": "Start learning about web programming and learn HTML/CSS/JS at <a class='strong' href='https://fullstack.edu.vn' target='blank'>fullstack.edu.vn</a>"}
+            {"title": "ReactJS & Native", "date": "", "content": "Có thể sử dụng ReactJS xây dụng giao diện web SPA, nắm bắt cơ bản các Hook, bên cạnh đó cũng có thể sử dụng nhiều thư viện khác như Redux, Redux-Toolkit,..."},
+            {"title": "JQuery", "date": "", "content": "Một thư viện của JS, cung cấp cú pháp ngắn gọn, xử lý dễ dàng hơn"},
+            {"title": "SASS", "date": "", "content": "Là ngôn ngữ tiền xử lý CSS, hỗ trợ nested, khai báo biến, hàm, import,.. trong CSS. Đã có kinh nghiệm xử lý trên nhiều project."},
+            {"title": "bootstrap 5", "date": "", "content": "Có kiến thức về Bootstrap để xây dựng giao diện nhanh hơn"},
+            {"title": "PHP/MySQL", "date": "", "content": "Biết cách làm việc cơ bản với DB thông qua PHP, truy vấn dữ liệu trong MySQL"},
+            {"title": "HTML/CSS/JS", "date": "", "content": "Sử dụng thành thạo các thẻ </tag> cơ bản trong HTML, phân chia bố cục trang web rõ ràng. Nắm rõ các thuộc tính style trong CSS như màu sắc, vị trí, animation,... Có kiến thức về JS ES6, áp dụng JS trong xử lý DOM events, selector,..."}
         ],
         "additional": [
-            {"title": "Git", "date": "May 2021", "content": "Start learning and using git to store and manage code"},
-            {"title": "Làm việc nhóm", "date": "", "content": "Through assignments and projects at school"},
-            {"title": "English", "date": "May 2019", "content": "Toiec 560"},
-            {"title": "Tự học", "date": "", "content": "Besides studying at school, I also self-study on websites, youtube,.. to improve my knowledge"}
+            {"title": "Git", "date": "", "content": "Biết cách quản lý source code thông qua Git"},
+            {"title": "Làm việc nhóm", "date": "", "content": "Có khả năng phối hợp làm việc nhóm"},
+            {"title": "Tiếng Anh", "date": "", "content": "Đọc hiểu tài liệu Tiếng Anh hoặc thông qua các công cụ hỗ trợ"},
+            {"title": "Tự học", "date": "", "content": "Tinh thần chủ động học hỏi, tự học cao"}
         ]
     },
     "projects": [
