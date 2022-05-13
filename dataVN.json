@@ -29,6 +29,16 @@
     },
     "projects": [
         {   
+            "tag": "landing-pages", 
+            "img": "./assets/imgs/Burger_Image (1).png", 
+            "title": "Burger House", 
+            "date": "5/2022", 
+            "description": "Cắt giao diện Landing-page HTML/CSS từ 1 mẫu thiết kế PSD", 
+            "stacks": ["html", "sass", "jquery", "responsive"], 
+            "view": "https://quangtuan28200.github.io/CoreFE/", 
+            "sources": "https://github.com/quangtuan28200/CoreFE/tree/testIIT"
+        },
+        {   
             "tag": "web-sites", 
             "img": "./assets/imgs/learnit.jpeg", 
             "title": "LearnIt", 
