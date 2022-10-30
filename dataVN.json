@@ -51,7 +51,7 @@
             "date": "10/2022", 
             "description": "App tìm kiếm, đặt lịch Salon", 
             "stacks": ["react-native", "firebase"], 
-            "view": "https://github.com/quangtuan28200/SaLonFinder", 
+            "view": "https://github.com/quangtuan28200/SaLonFinder/tree/tuan", 
             "sources": "https://github.com/quangtuan28200/SaLonFinder/tree/tuan"
         },
         {   
