@@ -181,9 +181,11 @@ function projects(data) {
                         </ul>
                     </div>
                     <div class="projects-card__link">
-                        <a href="${
-                            el.view
-                        }" target="_blank"><i class="fas fa-eye"></i>view</a>
+                        ${
+                            el.tag !== "apps"
+                                ? `<a href="${el.view}" target="_blank"><i class="fas fa-eye"></i>view</a>`
+                                : `<span></span>`
+                        }
                         <a href="${
                             el.sources
                         }" target="_blank"><i class="fas fa-code"></i>source</a>
