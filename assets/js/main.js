@@ -73,6 +73,7 @@ fetch(dataAPI)
         renderTimelineItem(".add", dataSkills.additional);
         //project
         $(".projects-card").append(projects(dataProjects));
+        handleImgModal(dataProjects);
     })
     .then(() => {
         setTimeout(() => {
@@ -149,13 +150,23 @@ function projects(data) {
         });
         return stackArr.join("");
     }
-    var htmlArr = $.map(data, function (el) {
+    var htmlArr = $.map(data, function (el, index) {
         return `
             <div class="projects-card__wr row no-gutters" data-tag="${el.tag}">
                 <div class="projects-card__img col l-5 m-12 c-12">
-                    <a href="${el.view}" target="_blank">
-                        <img src="${el.img}" alt="img">
-                    </a>
+                ${
+                    // el.tag === "apps"
+                    //     ? `
+                    //         <a href="" data-fancybox="gallery" data-caption="Caption Images 1">
+                    //             <img src="${el.img}" alt="img" class="apps">
+                    //         </a>
+                    //     `
+                    //     : ` <a href="${el.view}" target="_blank">
+                    //             <img src="${el.img}" alt="img">
+                    //         </a>`
+                    handleRenderThumbnail(el, index)
+                }
+                    
                 </div>
                 <div class="projects-card__info col l-7 m-12 c-12">
                     <div class="projects-card__detail">
@@ -182,6 +193,35 @@ function projects(data) {
         `;
     });
     return htmlArr.join("");
+}
+
+function handleRenderThumbnail(project, proj_index) {
+    const tag = project.tag;
+    const gallery = project.gallery;
+    let htmlThumbnail = `   <a href="${project.view}" target="_blank">
+                                <img src="${project.img}" alt="img">
+                            </a>`;
+
+    if (tag === "apps") {
+        htmlThumbnail = `
+            <a href="${gallery[0].img}" data-fancybox="gallery${proj_index}" data-caption="${gallery[0].caption}">
+                <img src="${gallery[0].img}" alt="${gallery[0].caption}">
+            </a>
+        `;
+        let htmlGallery = `
+            <div style="display:none;">
+                ${$.map(gallery, function (el, index) {
+                    if (index > 0) {
+                        return `<a href="${el.img}" data-fancybox="gallery${proj_index}" data-caption="${el.caption}">
+                                    <img src="${el.img}" alt="${el.caption}">
+                                </a>`;
+                    }
+                })}
+            </div>
+        `;
+        return htmlThumbnail + htmlGallery;
+    }
+    return htmlThumbnail;
 }
 
 //scroll event-----------------------------------------------------------------------------------------------------------//
@@ -315,3 +355,49 @@ function scrollFunction() {
 function topFunction() {
     $("html, body").animate({ scrollTop: 0 }, 300);
 }
+
+// handle image modal
+// Modal Setup
+
+function handleImgModal(projects) {
+    // $(".projects-card__img img.apps").click(function () {
+    //     // console.log($(this));
+    //     const src = $(this).attr("src");
+    //     const alt = $(this).attr("alt");
+    //     $("#modal-content").attr("src", src);
+    //     $("#modal-caption").html(alt);
+    //     $("#modal").css({ display: "block" });
+    // });
+
+    // $("#modal-close").click(function () {
+    //     $("#modal").css({ display: "none" });
+    // });
+    projects = projects.filter((project) => project.tag === "apps");
+
+    for (let index = 0; index < projects.length; index++) {
+        $(`[data-fancybox="gallery${index}"]`).fancybox({
+            buttons: [
+                // "slideShow",
+                "thumbs",
+                "zoom",
+                "fullScreen",
+                // "share",
+                "close",
+            ],
+            loop: false,
+            protect: true,
+        });
+    }
+}
+
+// global handler
+// document.addEventListener('click', function (e) {
+//   if (e.target.className.indexOf('modal-target') !== -1) {
+//       var img = e.target;
+//       var modalImg = document.getElementById("modal-content");
+//       var captionText = document.getElementById("modal-caption");
+//       modal.style.display = "block";
+//       modalImg.src = img.src;
+//       captionText.innerHTML = img.alt;
+//    }
+// });

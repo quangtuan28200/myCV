@@ -301,6 +301,96 @@ a.strong:hover {
   box-shadow: 0 0 5px white;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1002;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+  /* Modal Content (image) */
+  /* Caption of Modal Image */
+  /* Add Animation */
+  /* The Close Button */
+}
+.modal-target {
+  width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal-target:hover {
+  opacity: 0.7;
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  height: 80%;
+  opacity: 1 !important;
+  max-width: 80%;
+  object-fit: contain;
+}
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  margin-top: 32px;
+}
+.modal-content, .modal-caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+.modal-close {
+  user-select: none;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  transition: 0.3s;
+}
+.modal-close:hover, .modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-atransform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 header {
   background-image: linear-gradient(54deg, rgba(74, 74, 74, 0.85), rgba(74, 74, 74, 0.95)), url("https://quangtuan28200.github.io/myCV/assets/imgs/bg-header.jpg");
   background-repeat: no-repeat;
@@ -662,6 +752,9 @@ hr {
 }
 #projects .projects-card__img {
   max-height: 320px;
+}
+#projects .projects-card__img:hover {
+  cursor: pointer;
 }
 #projects .projects-card__img a {
   display: unset;

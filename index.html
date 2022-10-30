@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- jquery fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <!-- main CSS  -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -144,7 +146,7 @@
                                 <li><a href="" data-target-tag="web-sites">web-sites</a></li>
                                 <li><a href="" data-target-tag="landing-pages">landing-pages</a></li>
                                 <li><a href="" data-target-tag="pages">pages</a></li>
-                                <li><a href="" data-target-tag="web-app">web-apps</a></li>
+                                <li><a href="" data-target-tag="apps">apps</a></li>
                             </ul>
                         </div>
                         <div class="projects-card">
@@ -152,8 +154,16 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- <a href="" data-fancybox="gallery" data-caption="Caption Images 1">
+                    <img src="./assets/imgs/salonfinder/account1.jpg" alt="Image Gallery">
+                  </a>
+                  <a href="./assets/imgs/salonfinder/account2.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                    <img src="./assets/imgs/salonfinder/account2.jpg" alt="Image Gallery">
+                  </a> -->
             </div>
         </main>
+
         <footer>
             <div class="container">
                 <div class="footer__contact">
@@ -172,12 +182,23 @@
                 </div>
             </div>
         </footer>
+
     </div>
 
+    <!-- The image Modal -->
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-content" class="modal-content">
+        <div id="modal-caption" class="modal-caption">
+    </div>
+
+    <!-- The Loader -->
     <div class="loader">
         <div class="loader__wr"><div></div><div></div><div></div><div></div><div></div></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" referrerpolicy="no-referrer"></script>
+    
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

@@ -29,6 +29,32 @@
     },
     "projects": [
         {   
+            "tag": "apps", 
+            "gallery": [
+                {"img": "./assets/imgs/salonfinder.jpg", "caption": "Salon Finder"}, 
+                {"img": "./assets/imgs/salonfinder/register.jpg", "caption": "Đăng ký"}, 
+                {"img": "./assets/imgs/salonfinder/login.jpg", "caption": "Đăng nhập"},
+                {"img": "./assets/imgs/salonfinder/trangchu.jpg", "caption": "Trang chủ"},
+                {"img": "./assets/imgs/salonfinder/yeuthich.jpg", "caption": "Salon yêu thích"},
+                {"img": "./assets/imgs/salonfinder/datlich1.jpg", "caption": "Lịch đang đặt"},
+                {"img": "./assets/imgs/salonfinder/datlich2.jpg", "caption": "Lịch sử lịch hẹn"},
+                {"img": "./assets/imgs/salonfinder/account1.jpg", "caption": "Tài khoản"},
+                {"img": "./assets/imgs/salonfinder/account2.jpg", "caption": "Chỉnh sửa thông tin"},
+                {"img": "./assets/imgs/salonfinder/salondetail1.jpg", "caption": "Salon chi tiết"},
+                {"img": "./assets/imgs/salonfinder/salondetail2.jpg", "caption": "Đặt lịch"},
+                {"img": "./assets/imgs/salonfinder/order.jpg", "caption": "Xác nhận đặt lịch"},
+                {"img": "./assets/imgs/salonfinder/ordersuccess.jpg", "caption": "Đặt lịch thành công"},
+                {"img": "./assets/imgs/salonfinder/binhluan.jpg", "caption": "Đánh giá, bình luận"},
+                {"img": "./assets/imgs/salonfinder/timkiem.jpg", "caption": "Tìm kiếm Salon"}
+            ], 
+            "title": "Salon Finder", 
+            "date": "10/2022", 
+            "description": "App tìm kiếm, đặt lịch Salon", 
+            "stacks": ["react-native", "firebase"], 
+            "view": "https://github.com/quangtuan28200/SaLonFinder", 
+            "sources": "https://github.com/quangtuan28200/SaLonFinder/tree/tuan"
+        },
+        {   
             "tag": "landing-pages", 
             "img": "./assets/imgs/Burger_Image (1).png", 
             "title": "Burger House", 
@@ -49,6 +75,16 @@
             "sources": "https://github.com/quangtuan28200/MERN"
         },
         {   
+            "tag": "web-sites", 
+            "img": "./assets/imgs/kma.jpeg", 
+            "title": "KMA E-learning", 
+            "date": "3/2022", 
+            "description": "Web E-learning xây dựng dựa trên phần mềm mã nguồn mở Moddle hỗ trợ giảng dạy, học tập cho giảng viên và sinh viên trong trường", 
+            "stacks": ["html", "css", "js", "php"], 
+            "view": "https://kma.edu.vn/", 
+            "sources": "https://download.moodle.org/"
+        },
+        {   
             "tag": "landing-pages", 
             "img": "./assets/imgs/coffee.jpg", 
             "title": "coffee", 
@@ -67,16 +103,6 @@
             "stacks": ["html", "sass", "js", "responsive"], 
             "view": "https://quangtuan28200.github.io/ThePlayGround/", 
             "sources": "https://github.com/quangtuan28200/ThePlayGround/"
-        },
-        {   
-            "tag": "web-app", 
-            "img": "./assets/imgs/weather.png", 
-            "title": "wheather app", 
-            "date": "8/2021", 
-            "description": "Một app thời tiết nhỏ lấy dữ liệu từ 1 API miễn phí", 
-            "stacks": ["html", "css", "js", "responsive"], 
-            "view": "https://quangtuan28200.github.io/WeatherApp/", 
-            "sources": "https://github.com/quangtuan28200/WeatherApp/"
         },
         {   
             "tag": "landing-pages", 
@@ -103,7 +129,7 @@
             "img": "./assets/imgs/img_project_2.png", 
             "title": "Shopee", 
             "date": "1/2021", 
-            "description": "Một page từ được code lại theo Shopee", 
+            "description": "Một page được clone lại theo Shopee", 
             "stacks": ["html", "css", "responsive"], 
             "view": "https://quangtuan28200.github.io/shoppe", 
             "sources": "https://github.com/quangtuan28200/shoppe"

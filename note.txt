@@ -1,3 +1,16 @@
 sass dev/scss/style.scss  assets/css/style.css --watch
 sass dev/scss/cv.scss  assets/css/cv.css --watch
  // {"title": "fetch API", "date": "July 2021", "content": "Process data from the back-end via API"},
+
+30/10/2022 remove web-app
+
+{   
+    "tag": "web-app", 
+    "img": "./assets/imgs/weather.png", 
+    "title": "wheather app", 
+    "date": "8/2021", 
+    "description": "Một app thời tiết nhỏ lấy dữ liệu từ 1 API miễn phí", 
+    "stacks": ["html", "css", "js", "responsive"], 
+    "view": "https://quangtuan28200.github.io/WeatherApp/", 
+    "sources": "https://github.com/quangtuan28200/WeatherApp/"
+},
