@@ -1,24 +1,27 @@
 {
-    "hello": "Xin chào, mình là Tuấn, một Web Developer. Có kiến thức và kinh nghiệm nhiều hơn về Front-end, mình có thể chuyển hầu như các dạng thiết kế thành một giao diện Web hoàn chỉnh như Img, PSD, Figma,...Có thể tạo các animation mong muốn thông qua Jquery, JS và CSS, bên cạnh đó mình cũng có kiến thức về Grid và Responsive nên có thể làm cho trang Web tương thích trên nhiều thiết bị cũng như kích cỡ màn hình khác nhau. Với tinh thần trách nghiệm và ham học hỏi, mình rất muốn có một vị trí làm việc để có thể đóng góp cho sự phát triển của công ty, bên cạnh đó cũng là nơi để mình có thể học tập và tiếp thu thêm nhiều kiến thức kinh nghiệm mới.",
+    "hello": "Xin chào, mình là Tuấn, một Frontend Developer. Mình có thể chuyển hầu như các dạng thiết kế thành một giao diện Web hoàn chỉnh như Img, PSD, Figma,...Có thể tạo các animation mong muốn thông qua Jquery, JS và CSS, bên cạnh đó mình cũng có kiến thức về Grid và Responsive nên có thể làm cho trang Web tương thích trên nhiều thiết bị cũng như kích cỡ màn hình khác nhau. Với tinh thần trách nghiệm và ham học hỏi, mình rất muốn có một vị trí làm việc để có thể đóng góp khả năng của mình cho sự phát triển của công ty, bên cạnh đó cũng là nơi để mình có thể học tập và tiếp thu thêm nhiều kiến thức kinh nghiệm.",
     "resume": {
         "description": "",
         "career": [
-            {"title": "Lead Frontend/ Fullstack Developer", "date": "10 năm tới", "content": ""},
+            {"title": "Lead Frontend Developer", "date": "10 năm tới", "content": ""},
             {"title": "Senior Frontend Developer", "date": "4 đến 7 năm tới", "content": ""},
             {"title": "Junior Frontend Developer", "date": "3 năm tới", "content": ""}
         ],
         "education": [
-            {"title": "Học viện kỹ thuật mật mã", "date": "10/2018-Hiện tại", "content": "Hiện tại đang là sinh viên năm 4 và chuyên ngành theo học là Công nghệ thông tin (Nhúng và phần mềm di động)"}
+            {"title": "Học viện kỹ thuật mật mã", "date": "10/2018-Hiện tại", "content": "Hiện tại đang là sinh viên năm 5, chuyên ngành theo học là Công nghệ thông tin (Nhúng và phần mềm di động)"}
         ]
     },
     "skills": {
         "professional": [
-            {"title": "ReactJS & Native", "date": "", "content": "Có thể sử dụng ReactJS xây dụng giao diện web SPA, nắm bắt cơ bản các Hook, bên cạnh đó cũng có thể sử dụng nhiều thư viện khác như Redux, Redux-Toolkit,..."},
-            {"title": "JQuery", "date": "", "content": "Một thư viện của JS, cung cấp cú pháp ngắn gọn, xử lý dễ dàng hơn"},
-            {"title": "SASS", "date": "", "content": "Là ngôn ngữ tiền xử lý CSS, hỗ trợ nested, khai báo biến, hàm, import,.. trong CSS. Đã có kinh nghiệm xử lý trên nhiều project."},
-            {"title": "bootstrap 5", "date": "", "content": "Có kiến thức về Bootstrap để xây dựng giao diện nhanh hơn"},
-            {"title": "PHP/MySQL", "date": "", "content": "Biết cách làm việc cơ bản với DB thông qua PHP, truy vấn dữ liệu trong MySQL"},
-            {"title": "HTML/CSS/JS", "date": "", "content": "Sử dụng thành thạo các thẻ </tag> cơ bản trong HTML, phân chia bố cục trang web rõ ràng. Nắm rõ các thuộc tính style trong CSS như màu sắc, vị trí, animation,... Có kiến thức về JS ES6, áp dụng JS trong xử lý DOM events, selector,..."}
+            {"title": "React-Native", "date": "", "content": "Xây dựng giao diện App"},
+            {"title": "ReactJS", "date": "", "content": "Có thể sử dụng ReactJS xây dụng giao diện web SPA, nắm bắt cơ bản các Hook, Fetch, call API xử lý dữ liệu, bên cạnh đó cũng có thể sử dụng nhiều Node package khác như Redux, Redux-Toolkit,..."},
+            {"title": "SASS", "date": "", "content": "Là ngôn ngữ tiền xử lý CSS, hỗ trợ nested, khai báo biến, hàm, import,.. trong CSS nhằm tăng tốc độ dev, chặt chẽ và dễ quản lý hơn"},
+            {"title": "bootstrap 5", "date": "", "content": "Xây dựng giao diện nhanh hơn"},
+            {"title": "JQuery", "date": "", "content": "Thư viện của JS, cung cấp cú pháp ngắn gọn, đa tính năng, xử lý dễ dàng hơn giúp tăng tốc độ dev"},
+            {"title": "HTML,CSS,JS", "date": "", "content": "Sử dụng thành thạo các thẻ </tag> cơ bản trong HTML, phân chia bố cục trang web rõ ràng. Nắm rõ các thuộc tính style trong CSS như màu sắc, vị trí, animation,... Có kiến thức về JS ES6, áp dụng JS trong xử lý DOM events, selector,..."},
+            {"title": "NodeJS & MongoDB", "date": "", "content": ""},
+            {"title": "Firebase", "date": "", "content": "Sử dụng được Authentication, Firestore Database và Storage"},
+            {"title": "PHP & MySQL", "date": "", "content": "Biết cách làm việc cơ bản với DB thông qua PHP, truy vấn dữ liệu trong MySQL"}
         ],
         "additional": [
             {"title": "Git", "date": "", "content": "Biết cách quản lý source code thông qua Git"},
@@ -49,7 +52,7 @@
             ], 
             "title": "Salon Finder", 
             "date": "10/2022", 
-            "description": "App tìm kiếm, đặt lịch Salon", 
+            "description": "App tìm kiếm, đặt lịch Salon - Sản phẩm kết thúc môn học \"Lập trình ứng dụng Android\" ở trường ", 
             "stacks": ["react-native", "firebase"], 
             "sources": "https://github.com/quangtuan28200/SaLonFinder/tree/tuan"
         },
@@ -58,7 +61,7 @@
             "img": "./assets/imgs/Burger_Image (1).png", 
             "title": "Burger House", 
             "date": "5/2022", 
-            "description": "Cắt giao diện Landing-page HTML/CSS từ 1 mẫu thiết kế PSD", 
+            "description": "Cắt giao diện Landing-page từ 1 mẫu thiết kế PSD", 
             "stacks": ["html", "sass", "jquery", "responsive"], 
             "view": "https://quangtuan28200.github.io/CoreFE/", 
             "sources": "https://github.com/quangtuan28200/CoreFE/tree/testIIT"
@@ -68,8 +71,8 @@
             "img": "./assets/imgs/learnit.jpeg", 
             "title": "LearnIt", 
             "date": "4/2022", 
-            "description": "Một Web TodoList hoàn thành trong quá trình học tự học Back-end, Front-end sử dụng ReactJs và Bootstrap, useContext và Redux-Toolkit để quản lý các prop và state global", 
-            "stacks": ["html", "css", "js", "bootstrap", "NodeJS", "ReactJs", "MongoDB"], 
+            "description": "Web TodoList", 
+            "stacks": ["ReactJs", "Redux-Toolkit", "Bootstrap", "NodeJS", "MongoDB"], 
             "view": "https://effortless-snickerdoodle-75dba5.netlify.app", 
             "sources": "https://github.com/quangtuan28200/MERN"
         },
@@ -78,7 +81,7 @@
             "img": "./assets/imgs/kma.jpeg", 
             "title": "KMA E-learning", 
             "date": "3/2022", 
-            "description": "Web E-learning xây dựng dựa trên phần mềm mã nguồn mở Moddle hỗ trợ giảng dạy, học tập cho giảng viên và sinh viên trong trường", 
+            "description": "Web E-learning xây dựng dựa trên phần mềm mã nguồn mở Moddle, hiện tại đang được sử dụng để hỗ trợ giảng dạy, học tập cho giảng viên và sinh viên trong học viện", 
             "stacks": ["html", "css", "js", "php"], 
             "view": "https://kma.edu.vn/", 
             "sources": "https://download.moodle.org/"
@@ -88,7 +91,7 @@
             "img": "./assets/imgs/coffee.jpg", 
             "title": "coffee", 
             "date": "12/2021", 
-            "description": "Cắt giao diện Landing-page HTML/CSS từ 1 mẫu thiết kế trên Figma", 
+            "description": "Cắt giao diện Landing-page từ 1 mẫu thiết kế trên Figma", 
             "stacks": ["html", "sass", "js", "responsive"], 
             "view": "https://quangtuan28200.github.io/Coffee", 
             "sources": "https://github.com/quangtuan28200/Coffee"
@@ -98,7 +101,7 @@
             "img": "./assets/imgs/slide.png", 
             "title": "playground", 
             "date": "8/2021", 
-            "description": "Cắt giao diện Landing-page HTML/CSS từ 1 mẫu thiết kế PSD", 
+            "description": "Cắt giao diện Landing-page từ 1 mẫu thiết kế PSD", 
             "stacks": ["html", "sass", "js", "responsive"], 
             "view": "https://quangtuan28200.github.io/ThePlayGround/", 
             "sources": "https://github.com/quangtuan28200/ThePlayGround/"
@@ -108,7 +111,7 @@
             "img": "./assets/imgs/img_project_3.png", 
             "title": "self taught", 
             "date": "7/2021", 
-            "description": "Landing-page, sản phẩm sau quá trình tự học SCSS", 
+            "description": "Sản phẩm sau quá trình học SCSS", 
             "stacks": ["html", "sass", "responsive"], 
             "view": "https://quangtuan28200.github.io/FrontEnd_Process/SASS/project/project_hkteam/", 
             "sources": "https://github.com/quangtuan28200/FrontEnd_Process/tree/main/SASS/project/project_hkteam"
@@ -118,36 +121,16 @@
             "img": "./assets/imgs/img_project_4.png", 
             "title": "Kma tech", 
             "date": "6/2021", 
-            "description": "Website bán đồ công nghệ - Sản phẩm kết thúc môn học lập trình Web ở trường", 
+            "description": "Website bán đồ công nghệ - Sản phẩm kết thúc môn học \"lập trình Web\" ở trường", 
             "stacks": ["html", "css", "javascrip", "php", "mysql"], 
             "view": "http://actlearning.lovestoblog.com", 
             "sources": "https://github.com/quangtuan28200/BTL_WEB"
-        },
-        {   
-            "tag": "pages", 
-            "img": "./assets/imgs/img_project_2.png", 
-            "title": "Shopee", 
-            "date": "1/2021", 
-            "description": "Một page được clone lại theo Shopee", 
-            "stacks": ["html", "css", "responsive"], 
-            "view": "https://quangtuan28200.github.io/shoppe", 
-            "sources": "https://github.com/quangtuan28200/shoppe"
-        },
-        {   
-            "tag": "pages", 
-            "img": "./assets/imgs/img_project_1.jpg", 
-            "title": "The band", 
-            "date": "12/2020", 
-            "description": "Sản phẩm đầu tiên từ khi bắt đầu học Web, thiết kế dựa trên một mẫu trên W3Schools", 
-            "stacks": ["html", "css", "responsive"], 
-            "view": "https://quangtuan28200.github.io/the-band", 
-            "sources": "https://github.com/quangtuan28200/the-band"
         }
     ],
     "profile": { 
         "avt": "./assets/imgs/avatar.jpg",
         "name": "Bùi Quang Tuấn_",
-        "work": "Web Developer",
+        "work": "Frontend Developer",
         "date": "02/08/2000",
         "phone": "0387126034",
         "email": "buiquangtuan02082000@gmail.com",

@@ -14,3 +14,23 @@ sass dev/scss/cv.scss  assets/css/cv.css --watch
     "view": "https://quangtuan28200.github.io/WeatherApp/", 
     "sources": "https://github.com/quangtuan28200/WeatherApp/"
 },
+{   
+    "tag": "pages", 
+    "img": "./assets/imgs/img_project_2.png", 
+    "title": "Shopee", 
+    "date": "1/2021", 
+    "description": "Một page được clone lại theo Shopee", 
+    "stacks": ["html", "css", "responsive"], 
+    "view": "https://quangtuan28200.github.io/shoppe", 
+    "sources": "https://github.com/quangtuan28200/shoppe"
+},
+{   
+    "tag": "pages", 
+    "img": "./assets/imgs/img_project_1.jpg", 
+    "title": "The band", 
+    "date": "12/2020", 
+    "description": "Sản phẩm đầu tiên từ khi bắt đầu học Web, thiết kế dựa trên một mẫu trên W3Schools", 
+    "stacks": ["html", "css", "responsive"], 
+    "view": "https://quangtuan28200.github.io/the-band", 
+    "sources": "https://github.com/quangtuan28200/the-band"
+}
