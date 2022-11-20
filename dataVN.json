@@ -1,5 +1,5 @@
 {
-    "hello": "Xin chào, mình là Tuấn, một Frontend Developer. Mình có thể chuyển hầu như các dạng thiết kế thành một giao diện Web hoàn chỉnh như Img, PSD, Figma,...Có thể tạo các animation mong muốn thông qua Jquery, JS và CSS, bên cạnh đó mình cũng có kiến thức về Grid và Responsive nên có thể làm cho trang Web tương thích trên nhiều thiết bị cũng như kích cỡ màn hình khác nhau. Với tinh thần trách nghiệm và ham học hỏi, mình rất muốn có một vị trí làm việc để có thể đóng góp khả năng của mình cho sự phát triển của công ty, bên cạnh đó cũng là nơi để mình có thể học tập và tiếp thu thêm nhiều kiến thức kinh nghiệm.",
+    "hello": "Xin chào, mình là Tuấn, một Frontend Developer. Mình có thể chuyển hầu như các dạng thiết kế thành một giao diện Web hoàn chỉnh như Img, PSD, Figma,...Có thể tạo các animation mong muốn thông qua Jquery, JS và CSS, bên cạnh đó mình cũng có kiến thức về Grid và Responsive nên có thể làm cho trang Web tương thích trên nhiều thiết bị cũng như kích cỡ màn hình khác nhau. Ngoài ra mình cũng có thể sử dụng được nhiều thư viện và Framework khác như Jquery, Bootstrap, ReactJs, React Native. Với tinh thần trách nghiệm và ham học hỏi, mình rất muốn có một vị trí làm việc để có thể đóng góp khả năng của mình cho sự phát triển của công ty, bên cạnh đó cũng là nơi để mình có thể học tập và trau dồi thêm nhiều kiến thức kinh nghiệm.",
     "resume": {
         "description": "",
         "career": [
@@ -13,15 +13,14 @@
     },
     "skills": {
         "professional": [
-            {"title": "React-Native", "date": "", "content": "Xây dựng giao diện App"},
-            {"title": "ReactJS", "date": "", "content": "Có thể sử dụng ReactJS xây dụng giao diện web SPA, nắm bắt cơ bản các Hook, Fetch, call API xử lý dữ liệu, bên cạnh đó cũng có thể sử dụng nhiều Node package khác như Redux, Redux-Toolkit,..."},
-            {"title": "SASS", "date": "", "content": "Là ngôn ngữ tiền xử lý CSS, hỗ trợ nested, khai báo biến, hàm, import,.. trong CSS nhằm tăng tốc độ dev, chặt chẽ và dễ quản lý hơn"},
-            {"title": "bootstrap 5", "date": "", "content": "Xây dựng giao diện nhanh hơn"},
-            {"title": "JQuery", "date": "", "content": "Thư viện của JS, cung cấp cú pháp ngắn gọn, đa tính năng, xử lý dễ dàng hơn giúp tăng tốc độ dev"},
             {"title": "HTML,CSS,JS", "date": "", "content": "Sử dụng thành thạo các thẻ </tag> cơ bản trong HTML, phân chia bố cục trang web rõ ràng. Nắm rõ các thuộc tính style trong CSS như màu sắc, vị trí, animation,... Có kiến thức về JS ES6, áp dụng JS trong xử lý DOM events, selector,..."},
-            {"title": "NodeJS & MongoDB", "date": "", "content": ""},
+            {"title": "JQuery", "date": "", "content": "Thư viện của JS, cung cấp cú pháp ngắn gọn, đa tính năng, xử lý dễ dàng hơn giúp tăng tốc độ dev"},
+            {"title": "bootstrap 5", "date": "", "content": "Xây dựng giao diện nhanh hơn"},
+            {"title": "SASS", "date": "", "content": "Là ngôn ngữ tiền xử lý CSS, hỗ trợ nested, khai báo biến, hàm, import,.. trong CSS nhằm tăng tốc độ dev, chặt chẽ và dễ quản lý hơn"},
+            {"title": "ReactJS & React-Native", "date": "", "content": "Có thể sử dụng ReactJS xây dụng giao diện Web & App, nắm bắt cơ bản các Hook, Fetch, call API xử lý dữ liệu, bên cạnh đó cũng có thể sử dụng nhiều Node package khác như Redux, Redux-Toolkit,..."},
+            {"title": "PHP & MySQL", "date": "", "content": "Biết cách làm việc cơ bản với DB thông qua PHP, truy vấn dữ liệu trong MySQL"},
             {"title": "Firebase", "date": "", "content": "Sử dụng được Authentication, Firestore Database và Storage"},
-            {"title": "PHP & MySQL", "date": "", "content": "Biết cách làm việc cơ bản với DB thông qua PHP, truy vấn dữ liệu trong MySQL"}
+            {"title": "NodeJS & MongoDB", "date": "", "content": "Đang cập nhật..."}
         ],
         "additional": [
             {"title": "Git", "date": "", "content": "Biết cách quản lý source code thông qua Git"},
